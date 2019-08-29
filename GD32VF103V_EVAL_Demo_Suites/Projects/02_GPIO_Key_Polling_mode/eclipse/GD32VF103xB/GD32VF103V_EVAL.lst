@@ -1,0 +1,3548 @@
+
+GD32VF103V_EVAL.elf:     file format elf32-littleriscv
+GD32VF103V_EVAL.elf
+architecture: riscv:rv32, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x0800015c
+
+Program Header:
+    LOAD off    0x00001000 vaddr 0x08000000 paddr 0x08000000 align 2**12
+         filesz 0x00001af0 memsz 0x00001af0 flags rwx
+    LOAD off    0x00003000 vaddr 0x20000000 paddr 0x08001af0 align 2**12
+         filesz 0x00000068 memsz 0x00000068 flags rw-
+    LOAD off    0x00003068 vaddr 0x20000068 paddr 0x20000068 align 2**12
+         filesz 0x00000000 memsz 0x00000094 flags rw-
+    LOAD off    0x00003800 vaddr 0x20007800 paddr 0x200000fc align 2**12
+         filesz 0x00000000 memsz 0x00000800 flags rw-
+
+Sections:
+Idx Name                       Size      VMA       LMA       File off  Algn  Flags
+  0 .init                      00000236  08000000  08000000  00001000  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .ilalign                   00000002  08000236  08000236  00001236  2**0  ALLOC
+  2 .text                      000018ac  08000240  08000240  00001240  2**6  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .sdata2._global_impure_ptr 00000004  08001aec  08001aec  00002aec  2**2  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .lalign                    00000000  08001af0  08001af0  00003068  2**0  CONTENTS
+  5 .dalign                    00000000  20000000  20000000  00003068  2**0  CONTENTS
+  6 .data                      00000068  20000000  08001af0  00003000  2**2  CONTENTS, ALLOC, LOAD, DATA
+  7 .bss                       00000094  20000068  20000068  00003068  2**2  ALLOC
+  8 .stack                     00000800  20007800  200000fc  00003800  2**0  ALLOC
+  9 .debug_info                00006635  00000000  00000000  00003068  2**0  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_abbrev              00001788  00000000  00000000  0000969d  2**0  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc                 00002528  00000000  00000000  0000ae25  2**0  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_aranges             00000630  00000000  00000000  0000d350  2**3  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_ranges              00000698  00000000  00000000  0000d980  2**3  CONTENTS, READONLY, DEBUGGING
+ 14 .debug_line                000063db  00000000  00000000  0000e018  2**0  CONTENTS, READONLY, DEBUGGING
+ 15 .debug_str                 000028f6  00000000  00000000  000143f3  2**0  CONTENTS, READONLY, DEBUGGING
+ 16 .comment                   00000039  00000000  00000000  00016ce9  2**0  CONTENTS, READONLY
+ 17 .debug_frame               00000fcc  00000000  00000000  00016d24  2**2  CONTENTS, READONLY, DEBUGGING
+SYMBOL TABLE:
+08000000 l    d  .init	00000000 .init
+08000236 l    d  .ilalign	00000000 .ilalign
+08000240 l    d  .text	00000000 .text
+08001aec l    d  .sdata2._global_impure_ptr	00000000 .sdata2._global_impure_ptr
+08001af0 l    d  .lalign	00000000 .lalign
+20000000 l    d  .dalign	00000000 .dalign
+20000000 l    d  .data	00000000 .data
+20000068 l    d  .bss	00000000 .bss
+20007800 l    d  .stack	00000000 .stack
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 ./RISCV/env_Eclipse/start.o
+08000000 l       .init	00000000 vector_base
+08000182 l       .init	00000000 _start0800
+00000000 l    df *ABS*	00000000 _exit.c
+00000000 l    df *ABS*	00000000 write_hex.c
+00000000 l    df *ABS*	00000000 handlers.c
+00000000 l    df *ABS*	00000000 systick.c
+00000000 l    df *ABS*	00000000 divdf3.c
+00000000 l    df *ABS*	00000000 muldf3.c
+00000000 l    df *ABS*	00000000 libgcc2.c
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    df *ABS*	00000000 write.c
+00000000 l    df *ABS*	00000000 ./RISCV/env_Eclipse/entry.o
+0800062c l       .text	00000000 service_loop
+00000000 l    df *ABS*	00000000 init.c
+00000000 l    df *ABS*	00000000 n200_func.c
+00000000 l    df *ABS*	00000000 gd32vf103_gpio.c
+00000000 l    df *ABS*	00000000 gd32vf103_rcu.c
+00000000 l    df *ABS*	00000000 gd32vf103_usart.c
+00000000 l    df *ABS*	00000000 system_gd32vf103.c
+00000000 l    df *ABS*	00000000 ledf2.c
+00000000 l    df *ABS*	00000000 floatunsidf.c
+00000000 l    df *ABS*	00000000 floatundidf.c
+00000000 l    df *ABS*	00000000 libgcc2.c
+00000000 l    df *ABS*	00000000 atexit.c
+00000000 l    df *ABS*	00000000 exit.c
+00000000 l    df *ABS*	00000000 fini.c
+00000000 l    df *ABS*	00000000 init.c
+00000000 l    df *ABS*	00000000 memcpy.c
+00000000 l    df *ABS*	00000000 syswrite.c
+00000000 l    df *ABS*	00000000 writer.c
+00000000 l    df *ABS*	00000000 __atexit.c
+2000006c l     O .bss	0000008c _global_atexit0
+00000000 l    df *ABS*	00000000 __call_atexit.c
+00000000 l    df *ABS*	00000000 impure.c
+20000000 l     O .data	00000060 impure_data
+00000000 l    df *ABS*	00000000 reent.c
+00000000 l    df *ABS*	00000000 
+08001af0 l       .sdata2._global_impure_ptr	00000000 __fini_array_end
+08001af0 l       .sdata2._global_impure_ptr	00000000 __fini_array_start
+08001af0 l       .sdata2._global_impure_ptr	00000000 __init_array_end
+08001af0 l       .sdata2._global_impure_ptr	00000000 __preinit_array_end
+08001af0 l       .sdata2._global_impure_ptr	00000000 __init_array_start
+08001af0 l       .sdata2._global_impure_ptr	00000000 __preinit_array_start
+20000860 g       .data	00000000 __global_pointer$
+200000f8 g     O .bss	00000004 errno
+00000800 g       *ABS*	00000000 __stack_size
+080018a6 g     F .text	000000b6 memcpy
+08000ffe g     F .text	000000b6 .hidden __ltdf2
+080007aa g     F .text	00000004 gpio_bit_set
+20000060 g     O .data	00000004 SystemCoreClock
+08000686  w    F .text	00000026 handle_trap
+080005fc  w      .text	00000000 irq_entry
+20007800 g       .stack	00000000 _heap_end
+08001aec g     O .sdata2._global_impure_ptr	00000004 _global_impure_ptr
+08001838 g     F .text	0000006e __libc_init_array
+08001564 g     F .text	00000066 .hidden __floatunsidf
+080006ac g     F .text	00000014 _init
+080017fe g     F .text	0000003a __libc_fini_array
+0800066e  w    F .text	00000018 handle_nmi
+0800195c g     F .text	00000012 write
+08000ffe g     F .text	000000b6 .hidden __ledf2
+080009ac g     F .text	0000009e delay_1ms
+0800050a g     F .text	00000074 write_hex
+08001752 g     F .text	00000076 .hidden __clzsi2
+080007ae g     F .text	00000004 gpio_bit_reset
+20000068 g     O .bss	00000004 _global_atexit
+08001a24 g     F .text	000000c8 __call_exitprocs
+20008000 g       .stack	00000000 _sp
+0800015c g     F .init	00000000 _start
+080007c6 g     F .text	00000018 rcu_periph_clock_enable
+080015ca g     F .text	00000188 .hidden __floatundidf
+0800022e g       .init	00000000 enable_mcycle_minstret
+0800199c g     F .text	00000088 __register_exitproc
+0800095a g     F .text	00000052 led_flash
+080006c2 g     F .text	00000010 get_timer_value
+08000a4a g     F .text	000005b4 .hidden __divdf3
+080010b4 g     F .text	000004b0 .hidden __muldf3
+20000068 g       .bss	00000000 __bss_start
+080007de g     F .text	00000008 usart_data_transmit
+08000400 g     F .text	00000060 main
+08000580  w      .text	00000000 trap_entry
+08000228 g       .init	00000000 disable_mcycle_minstret
+080006f4 g     F .text	00000012 eclic_mode_enable
+080007fa g     F .text	0000011c SystemInit
+080006c0 g     F .text	00000002 _fini
+08000300 g     O .text	00000100 .hidden __clz_tab
+080017c8 g     F .text	0000000a atexit
+0800196e g     F .text	0000002e _write_r
+20000064 g     O .data	00000004 _impure_ptr
+20000000 g       .dalign	00000000 _data
+08000916 g     F .text	00000044 led_init
+080007bc g     F .text	0000000a gpio_input_bit_get
+080004ca g     F .text	00000040 _write
+20000068 g       .bss	00000000 _edata
+20000100 g       .bss	00000000 _end
+0800049a  w    F .text	00000030 _put_char
+08001af0 g       .lalign	00000000 _data_lma
+080017d2 g     F .text	0000002c exit
+080006d2 g     F .text	00000022 eclic_init
+08000460 g     F .text	0000003a _exit
+080007e6 g     F .text	00000014 usart_flag_get
+08000706 g     F .text	000000a4 gpio_init
+080007b2 g     F .text	0000000a gpio_bit_write
+
+
+
+Disassembly of section .init:
+
+08000000 <vector_base>:
+vector_base():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:73
+    .weak  CAN1_RX1_IRQHandler
+    .weak  CAN1_EWMC_IRQHandler
+    .weak  USBFS_IRQHandler
+
+vector_base:
+    j _start
+ 8000000:	aab1                	j	800015c <_start>
+ 8000002:	0001                	nop
+	...
+
+0800015c <_start>:
+_start():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:167
+	.globl _start
+	.type _start,@function
+
+_start:
+
+	csrc CSR_MSTATUS, MSTATUS_MIE
+ 800015c:	30047073          	csrci	mstatus,8
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:169
+	/* Jump to logical address first to ensure correct operation of RAM region  */
+    la		a0,	_start
+ 8000160:	00000517          	auipc	a0,0x0
+ 8000164:	ffc50513          	addi	a0,a0,-4 # 800015c <_start>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:170
+    li		a1,	1
+ 8000168:	4585                	li	a1,1
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:171
+	slli	a1,	a1, 29
+ 800016a:	05f6                	slli	a1,a1,0x1d
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:172
+    bleu	a1, a0, _start0800
+ 800016c:	00b57b63          	bgeu	a0,a1,8000182 <_start0800>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:173
+    srli	a1,	a1, 2
+ 8000170:	8189                	srli	a1,a1,0x2
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:174
+    bleu	a1, a0, _start0800
+ 8000172:	00b57863          	bgeu	a0,a1,8000182 <_start0800>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:175
+    la		a0,	_start0800
+ 8000176:	00000517          	auipc	a0,0x0
+ 800017a:	00c50513          	addi	a0,a0,12 # 8000182 <_start0800>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:176
+    add		a0, a0, a1
+ 800017e:	952e                	add	a0,a0,a1
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:177
+	jr      a0
+ 8000180:	8502                	jr	a0
+
+08000182 <_start0800>:
+_start0800():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:182
+
+_start0800:
+
+    /* Set the the NMI base to share with mtvec by setting CSR_MMISC_CTL */
+    li t0, 0x200
+ 8000182:	20000293          	li	t0,512
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:183
+    csrs CSR_MMISC_CTL, t0
+ 8000186:	7d02a073          	csrs	0x7d0,t0
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:186
+
+	/* Intial the mtvt*/
+    la t0, vector_base
+ 800018a:	00000297          	auipc	t0,0x0
+ 800018e:	e7628293          	addi	t0,t0,-394 # 8000000 <vector_base>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:187
+    csrw CSR_MTVT, t0
+ 8000192:	30729073          	csrw	mtvt,t0
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:190
+
+	/* Intial the mtvt2 and enable it*/
+    la t0, irq_entry
+ 8000196:	00000297          	auipc	t0,0x0
+ 800019a:	46628293          	addi	t0,t0,1126 # 80005fc <irq_entry>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:191
+    csrw CSR_MTVT2, t0
+ 800019e:	7ec29073          	csrw	0x7ec,t0
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:192
+    csrs CSR_MTVT2, 0x1
+ 80001a2:	7ec0e073          	csrsi	0x7ec,1
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:195
+
+    /* Intial the CSR MTVEC for the Trap ane NMI base addr*/
+    la t0, trap_entry
+ 80001a6:	00000297          	auipc	t0,0x0
+ 80001aa:	3da28293          	addi	t0,t0,986 # 8000580 <trap_entry>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:196
+    csrw CSR_MTVEC, t0
+ 80001ae:	30529073          	csrw	mtvec,t0
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:207
+	csrw fcsr, x0
+#endif
+
+.option push
+.option norelax
+	la gp, __global_pointer$
+ 80001b2:	18000197          	auipc	gp,0x18000
+ 80001b6:	6ae18193          	addi	gp,gp,1710 # 20000860 <__global_pointer$>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:209
+.option pop
+	la sp, _sp
+ 80001ba:	18008117          	auipc	sp,0x18008
+ 80001be:	e4610113          	addi	sp,sp,-442 # 20008000 <_sp>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:212
+
+	/* Load data section */
+	la a0, _data_lma
+ 80001c2:	00002517          	auipc	a0,0x2
+ 80001c6:	92e50513          	addi	a0,a0,-1746 # 8001af0 <__fini_array_end>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:213
+	la a1, _data
+ 80001ca:	18000597          	auipc	a1,0x18000
+ 80001ce:	e3658593          	addi	a1,a1,-458 # 20000000 <_data>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:214
+	la a2, _edata
+ 80001d2:	18000617          	auipc	a2,0x18000
+ 80001d6:	e9660613          	addi	a2,a2,-362 # 20000068 <_global_atexit>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:215
+	bgeu a1, a2, 2f
+ 80001da:	00c5fa63          	bgeu	a1,a2,80001ee <_start0800+0x6c>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:217
+1:
+	lw t0, (a0)
+ 80001de:	00052283          	lw	t0,0(a0)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:218
+	sw t0, (a1)
+ 80001e2:	0055a023          	sw	t0,0(a1)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:219
+	addi a0, a0, 4
+ 80001e6:	0511                	addi	a0,a0,4
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:220
+	addi a1, a1, 4
+ 80001e8:	0591                	addi	a1,a1,4
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:221
+	bltu a1, a2, 1b
+ 80001ea:	fec5eae3          	bltu	a1,a2,80001de <_start0800+0x5c>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:224
+2:
+	/* Clear bss section */
+	la a0, __bss_start
+ 80001ee:	18000517          	auipc	a0,0x18000
+ 80001f2:	e7a50513          	addi	a0,a0,-390 # 20000068 <_global_atexit>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:225
+	la a1, _end
+ 80001f6:	8a018593          	addi	a1,gp,-1888 # 20000100 <_end>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:226
+	bgeu a0, a1, 2f
+ 80001fa:	00b57763          	bgeu	a0,a1,8000208 <_start0800+0x86>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:228
+1:
+	sw zero, (a0)
+ 80001fe:	00052023          	sw	zero,0(a0)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:229
+	addi a0, a0, 4
+ 8000202:	0511                	addi	a0,a0,4
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:230
+	bltu a0, a1, 1b
+ 8000204:	feb56de3          	bltu	a0,a1,80001fe <_start0800+0x7c>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:233
+2:
+	/*enable mcycle_minstret*/
+    csrci CSR_MCOUNTINHIBIT, 0x5
+ 8000208:	3202f073          	csrci	mucounteren,5
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:235
+	/* Call global constructors */
+	la a0, __libc_fini_array
+ 800020c:	00001517          	auipc	a0,0x1
+ 8000210:	5f250513          	addi	a0,a0,1522 # 80017fe <__libc_fini_array>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:236
+	call atexit
+ 8000214:	5b4010ef          	jal	ra,80017c8 <atexit>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:237
+	call __libc_init_array
+ 8000218:	620010ef          	jal	ra,8001838 <__libc_init_array>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:241
+
+
+	/* argc = argv = 0 */
+	li a0, 0
+ 800021c:	4501                	li	a0,0
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:242
+	li a1, 0
+ 800021e:	4581                	li	a1,0
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:243
+	call main
+ 8000220:	22c5                	jal	8000400 <main>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:244
+	tail exit
+ 8000222:	5b00106f          	j	80017d2 <exit>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:247
+
+1:
+	j 1b
+ 8000226:	a001                	j	8000226 <_start0800+0xa4>
+
+08000228 <disable_mcycle_minstret>:
+disable_mcycle_minstret():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:251
+	
+	.global disable_mcycle_minstret
+disable_mcycle_minstret:
+        csrsi CSR_MCOUNTINHIBIT, 0x5
+ 8000228:	3202e073          	csrsi	mucounteren,5
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:252
+	ret
+ 800022c:	8082                	ret
+
+0800022e <enable_mcycle_minstret>:
+enable_mcycle_minstret():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:256
+
+	.global enable_mcycle_minstret
+enable_mcycle_minstret:
+        csrci CSR_MCOUNTINHIBIT, 0x5
+ 800022e:	3202f073          	csrci	mucounteren,5
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/start.S:257
+	ret
+ 8000232:	8082                	ret
+	...
+
+Disassembly of section .text:
+
+08000240 <__clz_tab-0xc0>:
+ 8000240:	500a                	0x500a
+ 8000242:	6f72                	flw	ft10,28(sp)
+ 8000244:	6d617267          	0x6d617267
+ 8000248:	6820                	flw	fs0,80(s0)
+ 800024a:	7361                	lui	t1,0xffff8
+ 800024c:	6520                	flw	fs0,72(a0)
+ 800024e:	6978                	flw	fa4,84(a0)
+ 8000250:	6574                	flw	fa3,76(a0)
+ 8000252:	2064                	fld	fs1,192(s0)
+ 8000254:	68746977          	0x68746977
+ 8000258:	6320                	flw	fs0,64(a4)
+ 800025a:	3a65646f          	jal	s0,8056600 <__fini_array_end+0x54b10>
+ 800025e:	0000                	unimp
+ 8000260:	7830                	flw	fa2,112(s0)
+ 8000262:	0000                	unimp
+ 8000264:	6d6e                	flw	fs10,216(sp)
+ 8000266:	0a69                	addi	s4,s4,26
+ 8000268:	0000                	unimp
+ 800026a:	0000                	unimp
+ 800026c:	7274                	flw	fa3,100(a2)
+ 800026e:	7061                	c.lui	zero,0xffff8
+ 8000270:	000a                	c.slli	zero,0x2
+	...
+ 800027a:	0000                	unimp
+ 800027c:	4000                	lw	s0,0(s0)
+ 800027e:	0a0c40af          	0xa0c40af
+ 8000282:	0000                	unimp
+ 8000284:	0890                	addi	a2,sp,80
+ 8000286:	0000                	unimp
+ 8000288:	09a0                	addi	s0,sp,216
+ 800028a:	0000                	unimp
+ 800028c:	09a8                	addi	a0,sp,216
+ 800028e:	0000                	unimp
+ 8000290:	09a0                	addi	s0,sp,216
+ 8000292:	0000                	unimp
+ 8000294:	08c0                	addi	s0,sp,84
+ 8000296:	0000                	unimp
+ 8000298:	09a0                	addi	s0,sp,216
+ 800029a:	0000                	unimp
+ 800029c:	09a8                	addi	a0,sp,216
+ 800029e:	0000                	unimp
+ 80002a0:	0890                	addi	a2,sp,80
+ 80002a2:	0000                	unimp
+ 80002a4:	0890                	addi	a2,sp,80
+ 80002a6:	0000                	unimp
+ 80002a8:	08c0                	addi	s0,sp,84
+ 80002aa:	0000                	unimp
+ 80002ac:	09a8                	addi	a0,sp,216
+ 80002ae:	0000                	unimp
+ 80002b0:	0a02                	c.slli64	s4
+ 80002b2:	0000                	unimp
+ 80002b4:	0a02                	c.slli64	s4
+ 80002b6:	0000                	unimp
+ 80002b8:	0a02                	c.slli64	s4
+ 80002ba:	0000                	unimp
+ 80002bc:	08c0                	addi	s0,sp,84
+ 80002be:	0000                	unimp
+ 80002c0:	1000                	addi	s0,sp,32
+ 80002c2:	0000                	unimp
+ 80002c4:	0ef6                	slli	t4,t4,0x1d
+ 80002c6:	0000                	unimp
+ 80002c8:	0ef6                	slli	t4,t4,0x1d
+ 80002ca:	0000                	unimp
+ 80002cc:	0ef4                	addi	a3,sp,860
+ 80002ce:	0000                	unimp
+ 80002d0:	0efc                	addi	a5,sp,860
+ 80002d2:	0000                	unimp
+ 80002d4:	0efc                	addi	a5,sp,860
+ 80002d6:	0000                	unimp
+ 80002d8:	0ec2                	slli	t4,t4,0x10
+ 80002da:	0000                	unimp
+ 80002dc:	0ef4                	addi	a3,sp,860
+ 80002de:	0000                	unimp
+ 80002e0:	0efc                	addi	a5,sp,860
+ 80002e2:	0000                	unimp
+ 80002e4:	0ec2                	slli	t4,t4,0x10
+ 80002e6:	0000                	unimp
+ 80002e8:	0efc                	addi	a5,sp,860
+ 80002ea:	0000                	unimp
+ 80002ec:	0ef4                	addi	a3,sp,860
+ 80002ee:	0000                	unimp
+ 80002f0:	0fec                	addi	a1,sp,988
+ 80002f2:	0000                	unimp
+ 80002f4:	0fec                	addi	a1,sp,988
+ 80002f6:	0000                	unimp
+ 80002f8:	0fec                	addi	a1,sp,988
+ 80002fa:	0000                	unimp
+ 80002fc:	0ec2                	slli	t4,t4,0x10
+	...
+
+08000300 <__clz_tab>:
+ 8000300:	0100 0202 0303 0303 0404 0404 0404 0404     ................
+ 8000310:	0505 0505 0505 0505 0505 0505 0505 0505     ................
+ 8000320:	0606 0606 0606 0606 0606 0606 0606 0606     ................
+ 8000330:	0606 0606 0606 0606 0606 0606 0606 0606     ................
+ 8000340:	0707 0707 0707 0707 0707 0707 0707 0707     ................
+ 8000350:	0707 0707 0707 0707 0707 0707 0707 0707     ................
+ 8000360:	0707 0707 0707 0707 0707 0707 0707 0707     ................
+ 8000370:	0707 0707 0707 0707 0707 0707 0707 0707     ................
+ 8000380:	0808 0808 0808 0808 0808 0808 0808 0808     ................
+ 8000390:	0808 0808 0808 0808 0808 0808 0808 0808     ................
+ 80003a0:	0808 0808 0808 0808 0808 0808 0808 0808     ................
+ 80003b0:	0808 0808 0808 0808 0808 0808 0808 0808     ................
+ 80003c0:	0808 0808 0808 0808 0808 0808 0808 0808     ................
+ 80003d0:	0808 0808 0808 0808 0808 0808 0808 0808     ................
+ 80003e0:	0808 0808 0808 0808 0808 0808 0808 0808     ................
+ 80003f0:	0808 0808 0808 0808 0808 0808 0808 0808     ................
+
+08000400 <main>:
+main():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:49
+    \param[in]  none
+    \param[out] none
+    \retval     none
+*/
+int main(void)
+{
+ 8000400:	1141                	addi	sp,sp,-16
+ 8000402:	c606                	sw	ra,12(sp)
+ 8000404:	c422                	sw	s0,8(sp)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:51
+    /* initialize the LEDs */
+    led_init();
+ 8000406:	2b01                	jal	8000916 <led_init>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:54
+    
+    /* flash the LEDs for 1 time */
+    led_flash(1);
+ 8000408:	4505                	li	a0,1
+ 800040a:	2b81                	jal	800095a <led_flash>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:57
+    
+    /* enable the KEY_B clock */
+    rcu_periph_clock_enable(RCU_GPIOC);
+ 800040c:	60400513          	li	a0,1540
+ 8000410:	2e5d                	jal	80007c6 <rcu_periph_clock_enable>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:58
+    rcu_periph_clock_enable(RCU_AF);
+ 8000412:	60000513          	li	a0,1536
+ 8000416:	2e45                	jal	80007c6 <rcu_periph_clock_enable>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:61
+
+    /* configure button pin as input */
+    gpio_init(GPIOC, GPIO_MODE_IN_FLOATING, GPIO_OSPEED_50MHZ, GPIO_PIN_13);
+ 8000418:	6689                	lui	a3,0x2
+ 800041a:	460d                	li	a2,3
+ 800041c:	4591                	li	a1,4
+ 800041e:	40011537          	lui	a0,0x40011
+ 8000422:	24d5                	jal	8000706 <gpio_init>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:70
+        if(RESET ==  gpio_input_bit_get(GPIOC, GPIO_PIN_13)){
+            delay_1ms(50);
+
+            /* check whether the button is pressed */
+            if(RESET == gpio_input_bit_get(GPIOC, GPIO_PIN_13)){
+                gpio_bit_write(GPIOC, GPIO_PIN_2, (bit_status)(1-gpio_input_bit_get(GPIOC, GPIO_PIN_2)));
+ 8000424:	4405                	li	s0,1
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:65
+        if(RESET ==  gpio_input_bit_get(GPIOC, GPIO_PIN_13)){
+ 8000426:	6589                	lui	a1,0x2
+ 8000428:	40011537          	lui	a0,0x40011
+ 800042c:	2e41                	jal	80007bc <gpio_input_bit_get>
+ 800042e:	fd65                	bnez	a0,8000426 <main+0x26>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:66
+            delay_1ms(50);
+ 8000430:	03200513          	li	a0,50
+ 8000434:	2ba5                	jal	80009ac <delay_1ms>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:69
+            if(RESET == gpio_input_bit_get(GPIOC, GPIO_PIN_13)){
+ 8000436:	6589                	lui	a1,0x2
+ 8000438:	40011537          	lui	a0,0x40011
+ 800043c:	2641                	jal	80007bc <gpio_input_bit_get>
+ 800043e:	e919                	bnez	a0,8000454 <main+0x54>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:70
+                gpio_bit_write(GPIOC, GPIO_PIN_2, (bit_status)(1-gpio_input_bit_get(GPIOC, GPIO_PIN_2)));
+ 8000440:	4591                	li	a1,4
+ 8000442:	40011537          	lui	a0,0x40011
+ 8000446:	2e9d                	jal	80007bc <gpio_input_bit_get>
+ 8000448:	40a40633          	sub	a2,s0,a0
+ 800044c:	4591                	li	a1,4
+ 800044e:	40011537          	lui	a0,0x40011
+ 8000452:	2685                	jal	80007b2 <gpio_bit_write>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:72 (discriminator 1)
+            }
+            while(RESET == gpio_input_bit_get(GPIOC, GPIO_PIN_13)){
+ 8000454:	6589                	lui	a1,0x2
+ 8000456:	40011537          	lui	a0,0x40011
+ 800045a:	268d                	jal	80007bc <gpio_input_bit_get>
+ 800045c:	dd65                	beqz	a0,8000454 <main+0x54>
+ 800045e:	b7e1                	j	8000426 <main+0x26>
+
+08000460 <_exit>:
+_exit():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/_exit.c:9
+
+#include "stub.h"
+
+
+void _exit(int code)
+{
+ 8000460:	7179                	addi	sp,sp,-48
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/_exit.c:10
+  const char message[] = "\nProgram has exited with code:";
+ 8000462:	080005b7          	lui	a1,0x8000
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/_exit.c:9
+{
+ 8000466:	d422                	sw	s0,40(sp)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/_exit.c:10
+  const char message[] = "\nProgram has exited with code:";
+ 8000468:	467d                	li	a2,31
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/_exit.c:9
+{
+ 800046a:	842a                	mv	s0,a0
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/_exit.c:10
+  const char message[] = "\nProgram has exited with code:";
+ 800046c:	24058593          	addi	a1,a1,576 # 8000240 <enable_mcycle_minstret+0x12>
+ 8000470:	850a                	mv	a0,sp
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/_exit.c:9
+{
+ 8000472:	d606                	sw	ra,44(sp)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/_exit.c:10
+  const char message[] = "\nProgram has exited with code:";
+ 8000474:	432010ef          	jal	ra,80018a6 <memcpy>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/_exit.c:12
+
+  write(STDERR_FILENO, message, sizeof(message) - 1);
+ 8000478:	4679                	li	a2,30
+ 800047a:	858a                	mv	a1,sp
+ 800047c:	4509                	li	a0,2
+ 800047e:	4de010ef          	jal	ra,800195c <write>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/_exit.c:13
+  write_hex(STDERR_FILENO, code);
+ 8000482:	85a2                	mv	a1,s0
+ 8000484:	4509                	li	a0,2
+ 8000486:	2051                	jal	800050a <write_hex>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/_exit.c:14
+  write(STDERR_FILENO, "\n", 1);
+ 8000488:	080005b7          	lui	a1,0x8000
+ 800048c:	4605                	li	a2,1
+ 800048e:	27058593          	addi	a1,a1,624 # 8000270 <enable_mcycle_minstret+0x42>
+ 8000492:	4509                	li	a0,2
+ 8000494:	4c8010ef          	jal	ra,800195c <write>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/_exit.c:16 (discriminator 1)
+
+  for (;;);
+ 8000498:	a001                	j	8000498 <_exit+0x38>
+
+0800049a <_put_char>:
+_put_char():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write.c:40
+int puts(const char* string) {
+	return _write(0, (const void *) string, strlen(string));
+}
+
+int _put_char(int ch)
+{
+ 800049a:	1141                	addi	sp,sp,-16
+ 800049c:	c422                	sw	s0,8(sp)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write.c:41
+    usart_data_transmit(USART0, (uint8_t) ch );
+ 800049e:	40014437          	lui	s0,0x40014
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write.c:40
+{
+ 80004a2:	c226                	sw	s1,4(sp)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write.c:41
+    usart_data_transmit(USART0, (uint8_t) ch );
+ 80004a4:	0ff57593          	andi	a1,a0,255
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write.c:40
+{
+ 80004a8:	84aa                	mv	s1,a0
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write.c:41
+    usart_data_transmit(USART0, (uint8_t) ch );
+ 80004aa:	80040513          	addi	a0,s0,-2048 # 40013800 <_sp+0x2000b800>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write.c:40
+{
+ 80004ae:	c606                	sw	ra,12(sp)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write.c:42
+    while (usart_flag_get(USART0, USART_FLAG_TBE)== RESET){
+ 80004b0:	80040413          	addi	s0,s0,-2048
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write.c:41
+    usart_data_transmit(USART0, (uint8_t) ch );
+ 80004b4:	262d                	jal	80007de <usart_data_transmit>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write.c:42 (discriminator 1)
+    while (usart_flag_get(USART0, USART_FLAG_TBE)== RESET){
+ 80004b6:	459d                	li	a1,7
+ 80004b8:	8522                	mv	a0,s0
+ 80004ba:	2635                	jal	80007e6 <usart_flag_get>
+ 80004bc:	dd6d                	beqz	a0,80004b6 <_put_char+0x1c>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write.c:46
+    }
+
+    return ch;
+}
+ 80004be:	40b2                	lw	ra,12(sp)
+ 80004c0:	4422                	lw	s0,8(sp)
+ 80004c2:	8526                	mv	a0,s1
+ 80004c4:	4492                	lw	s1,4(sp)
+ 80004c6:	0141                	addi	sp,sp,16
+ 80004c8:	8082                	ret
+
+080004ca <_write>:
+_write():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write.c:17
+ssize_t _write(int fd, const void* ptr, size_t len) {
+ 80004ca:	1101                	addi	sp,sp,-32
+ 80004cc:	cc22                	sw	s0,24(sp)
+ 80004ce:	ca26                	sw	s1,20(sp)
+ 80004d0:	c84a                	sw	s2,16(sp)
+ 80004d2:	c64e                	sw	s3,12(sp)
+ 80004d4:	ce06                	sw	ra,28(sp)
+ 80004d6:	84b2                	mv	s1,a2
+ 80004d8:	842e                	mv	s0,a1
+ 80004da:	00c58933          	add	s2,a1,a2
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write.c:25
+			if (current[jj] == '\n') {
+ 80004de:	49a9                	li	s3,10
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write.c:22 (discriminator 1)
+		for (size_t jj = 0; jj < len; jj++) {
+ 80004e0:	01241a63          	bne	s0,s2,80004f4 <_write+0x2a>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write.c:33
+}
+ 80004e4:	40f2                	lw	ra,28(sp)
+ 80004e6:	4462                	lw	s0,24(sp)
+ 80004e8:	8526                	mv	a0,s1
+ 80004ea:	4942                	lw	s2,16(sp)
+ 80004ec:	44d2                	lw	s1,20(sp)
+ 80004ee:	49b2                	lw	s3,12(sp)
+ 80004f0:	6105                	addi	sp,sp,32
+ 80004f2:	8082                	ret
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write.c:23
+			_put_char(current[jj]);
+ 80004f4:	00044503          	lbu	a0,0(s0)
+ 80004f8:	374d                	jal	800049a <_put_char>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write.c:25
+			if (current[jj] == '\n') {
+ 80004fa:	00044783          	lbu	a5,0(s0)
+ 80004fe:	01379463          	bne	a5,s3,8000506 <_write+0x3c>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write.c:26
+				_put_char('\r');
+ 8000502:	4535                	li	a0,13
+ 8000504:	3f59                	jal	800049a <_put_char>
+ 8000506:	0405                	addi	s0,s0,1
+ 8000508:	bfe1                	j	80004e0 <_write+0x16>
+
+0800050a <write_hex>:
+write_hex():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write_hex.c:7
+
+#include <stdint.h>
+#include <unistd.h>
+
+void write_hex(int fd, unsigned long int hex)
+{
+ 800050a:	7179                	addi	sp,sp,-48
+ 800050c:	ce4e                	sw	s3,28(sp)
+ 800050e:	89ae                	mv	s3,a1
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write_hex.c:11
+  uint8_t ii;
+  uint8_t jj;
+  char towrite;
+  write(fd , "0x", 2);
+ 8000510:	080005b7          	lui	a1,0x8000
+ 8000514:	4609                	li	a2,2
+ 8000516:	26058593          	addi	a1,a1,608 # 8000260 <enable_mcycle_minstret+0x32>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write_hex.c:7
+{
+ 800051a:	d422                	sw	s0,40(sp)
+ 800051c:	d226                	sw	s1,36(sp)
+ 800051e:	d04a                	sw	s2,32(sp)
+ 8000520:	cc52                	sw	s4,24(sp)
+ 8000522:	ca56                	sw	s5,20(sp)
+ 8000524:	d606                	sw	ra,44(sp)
+ 8000526:	892a                	mv	s2,a0
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write_hex.c:11
+  write(fd , "0x", 2);
+ 8000528:	4471                	li	s0,28
+ 800052a:	432010ef          	jal	ra,800195c <write>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write_hex.c:14
+  for (ii = sizeof(unsigned long int) * 2 ; ii > 0; ii--) {
+    jj = ii - 1;
+    uint8_t digit = ((hex & (0xF << (jj*4))) >> (jj*4));
+ 800052e:	4a3d                	li	s4,15
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write_hex.c:15
+    towrite = digit < 0xA ? ('0' + digit) : ('A' +  (digit - 0xA));
+ 8000530:	4aa5                	li	s5,9
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write_hex.c:12
+  for (ii = sizeof(unsigned long int) * 2 ; ii > 0; ii--) {
+ 8000532:	54f1                	li	s1,-4
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write_hex.c:14
+    uint8_t digit = ((hex & (0xF << (jj*4))) >> (jj*4));
+ 8000534:	008a17b3          	sll	a5,s4,s0
+ 8000538:	0137f7b3          	and	a5,a5,s3
+ 800053c:	0087d7b3          	srl	a5,a5,s0
+ 8000540:	0ff7f793          	andi	a5,a5,255
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write_hex.c:15
+    towrite = digit < 0xA ? ('0' + digit) : ('A' +  (digit - 0xA));
+ 8000544:	02faea63          	bltu	s5,a5,8000578 <write_hex+0x6e>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write_hex.c:15 (discriminator 1)
+ 8000548:	03078793          	addi	a5,a5,48
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write_hex.c:15 (discriminator 2)
+ 800054c:	07e2                	slli	a5,a5,0x18
+ 800054e:	87e1                	srai	a5,a5,0x18
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write_hex.c:16 (discriminator 2)
+    write(fd, &towrite, 1);
+ 8000550:	4605                	li	a2,1
+ 8000552:	00f10593          	addi	a1,sp,15
+ 8000556:	854a                	mv	a0,s2
+ 8000558:	1471                	addi	s0,s0,-4
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write_hex.c:15 (discriminator 2)
+    towrite = digit < 0xA ? ('0' + digit) : ('A' +  (digit - 0xA));
+ 800055a:	00f107a3          	sb	a5,15(sp)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write_hex.c:16 (discriminator 2)
+    write(fd, &towrite, 1);
+ 800055e:	3fe010ef          	jal	ra,800195c <write>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write_hex.c:12 (discriminator 2)
+  for (ii = sizeof(unsigned long int) * 2 ; ii > 0; ii--) {
+ 8000562:	fc9419e3          	bne	s0,s1,8000534 <write_hex+0x2a>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write_hex.c:18
+  }
+}
+ 8000566:	50b2                	lw	ra,44(sp)
+ 8000568:	5422                	lw	s0,40(sp)
+ 800056a:	5492                	lw	s1,36(sp)
+ 800056c:	5902                	lw	s2,32(sp)
+ 800056e:	49f2                	lw	s3,28(sp)
+ 8000570:	4a62                	lw	s4,24(sp)
+ 8000572:	4ad2                	lw	s5,20(sp)
+ 8000574:	6145                	addi	sp,sp,48
+ 8000576:	8082                	ret
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/stubs/write_hex.c:15 (discriminator 2)
+    towrite = digit < 0xA ? ('0' + digit) : ('A' +  (digit - 0xA));
+ 8000578:	03778793          	addi	a5,a5,55
+ 800057c:	bfc1                	j	800054c <write_hex+0x42>
+	...
+
+08000580 <trap_entry>:
+trap_entry():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/entry.S:218
+trap_entry:
+  // Allocate the stack space
+ // addi sp, sp, -19*REGBYTES
+
+  // Save the caller saving registers (context)
+  SAVE_CONTEXT
+ 8000580:	715d                	addi	sp,sp,-80
+ 8000582:	c006                	sw	ra,0(sp)
+ 8000584:	c212                	sw	tp,4(sp)
+ 8000586:	c416                	sw	t0,8(sp)
+ 8000588:	c61a                	sw	t1,12(sp)
+ 800058a:	c81e                	sw	t2,16(sp)
+ 800058c:	ca2a                	sw	a0,20(sp)
+ 800058e:	cc2e                	sw	a1,24(sp)
+ 8000590:	ce32                	sw	a2,28(sp)
+ 8000592:	d036                	sw	a3,32(sp)
+ 8000594:	d23a                	sw	a4,36(sp)
+ 8000596:	d43e                	sw	a5,40(sp)
+ 8000598:	d642                	sw	a6,44(sp)
+ 800059a:	d846                	sw	a7,48(sp)
+ 800059c:	da72                	sw	t3,52(sp)
+ 800059e:	dc76                	sw	t4,56(sp)
+ 80005a0:	de7a                	sw	t5,60(sp)
+ 80005a2:	c0fe                	sw	t6,64(sp)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/entry.S:220
+  // Save the MEPC/Mstatus/Msubm reg
+  SAVE_EPC_STATUS
+ 80005a4:	341022f3          	csrr	t0,mepc
+ 80005a8:	c096                	sw	t0,64(sp)
+ 80005aa:	300022f3          	csrr	t0,mstatus
+ 80005ae:	c296                	sw	t0,68(sp)
+ 80005b0:	7c4022f3          	csrr	t0,0x7c4
+ 80005b4:	c496                	sw	t0,72(sp)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/entry.S:223
+
+     // Set the function argument
+  csrr a0, mcause
+ 80005b6:	34202573          	csrr	a0,mcause
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/entry.S:224
+  mv a1, sp
+ 80005ba:	858a                	mv	a1,sp
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/entry.S:226
+     // Call the function
+  call handle_trap
+ 80005bc:	20e9                	jal	8000686 <handle_trap>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/entry.S:229
+
+  // Restore the MEPC/Mstatus/Msubm reg
+  RESTORE_EPC_STATUS
+ 80005be:	4286                	lw	t0,64(sp)
+ 80005c0:	34129073          	csrw	mepc,t0
+ 80005c4:	4296                	lw	t0,68(sp)
+ 80005c6:	30029073          	csrw	mstatus,t0
+ 80005ca:	42a6                	lw	t0,72(sp)
+ 80005cc:	7c429073          	csrw	0x7c4,t0
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/entry.S:231
+  // Restore the caller saving registers (context)
+  RESTORE_CONTEXT
+ 80005d0:	4082                	lw	ra,0(sp)
+ 80005d2:	4212                	lw	tp,4(sp)
+ 80005d4:	42a2                	lw	t0,8(sp)
+ 80005d6:	4332                	lw	t1,12(sp)
+ 80005d8:	43c2                	lw	t2,16(sp)
+ 80005da:	4552                	lw	a0,20(sp)
+ 80005dc:	45e2                	lw	a1,24(sp)
+ 80005de:	4672                	lw	a2,28(sp)
+ 80005e0:	5682                	lw	a3,32(sp)
+ 80005e2:	5712                	lw	a4,36(sp)
+ 80005e4:	57a2                	lw	a5,40(sp)
+ 80005e6:	5832                	lw	a6,44(sp)
+ 80005e8:	58c2                	lw	a7,48(sp)
+ 80005ea:	5e52                	lw	t3,52(sp)
+ 80005ec:	5ee2                	lw	t4,56(sp)
+ 80005ee:	5f72                	lw	t5,60(sp)
+ 80005f0:	4f86                	lw	t6,64(sp)
+ 80005f2:	6161                	addi	sp,sp,80
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/entry.S:236
+
+  // De-allocate the stack space
+ // addi sp, sp, 19*REGBYTES
+  // Return to regular code
+  mret
+ 80005f4:	30200073          	mret
+ 80005f8:	0000                	unimp
+	...
+
+080005fc <irq_entry>:
+irq_entry():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/entry.S:251
+.weak irq_entry
+irq_entry: // -------------> This label will be set to MTVT2 register
+  // Allocate the stack space
+  
+
+  SAVE_CONTEXT// Save 16 regs
+ 80005fc:	715d                	addi	sp,sp,-80
+ 80005fe:	c006                	sw	ra,0(sp)
+ 8000600:	c212                	sw	tp,4(sp)
+ 8000602:	c416                	sw	t0,8(sp)
+ 8000604:	c61a                	sw	t1,12(sp)
+ 8000606:	c81e                	sw	t2,16(sp)
+ 8000608:	ca2a                	sw	a0,20(sp)
+ 800060a:	cc2e                	sw	a1,24(sp)
+ 800060c:	ce32                	sw	a2,28(sp)
+ 800060e:	d036                	sw	a3,32(sp)
+ 8000610:	d23a                	sw	a4,36(sp)
+ 8000612:	d43e                	sw	a5,40(sp)
+ 8000614:	d642                	sw	a6,44(sp)
+ 8000616:	d846                	sw	a7,48(sp)
+ 8000618:	da72                	sw	t3,52(sp)
+ 800061a:	dc76                	sw	t4,56(sp)
+ 800061c:	de7a                	sw	t5,60(sp)
+ 800061e:	c0fe                	sw	t6,64(sp)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/entry.S:254
+
+  //------This special CSR read operation, which is actually use mcause as operand to directly store it to memory
+  csrrwi  x0, CSR_PUSHMCAUSE, 17
+ 8000620:	7ee8d073          	csrwi	0x7ee,17
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/entry.S:256
+  //------This special CSR read operation, which is actually use mepc as operand to directly store it to memory
+  csrrwi  x0, CSR_PUSHMEPC, 18
+ 8000624:	7ef95073          	csrwi	0x7ef,18
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/entry.S:258
+  //------This special CSR read operation, which is actually use Msubm as operand to directly store it to memory
+  csrrwi  x0, CSR_PUSHMSUBM, 19
+ 8000628:	7eb9d073          	csrwi	0x7eb,19
+
+0800062c <service_loop>:
+service_loop():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/entry.S:264
+ 
+service_loop:
+  //------This special CSR read/write operation, which is actually Claim the CLIC to find its pending highest
+  // ID, if the ID is not 0, then automatically enable the mstatus.MIE, and jump to its vector-entry-label, and
+  // update the link register 
+  csrrw ra, CSR_JALMNXTI, ra 
+ 800062c:	7ed090f3          	csrrw	ra,0x7ed,ra
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/entry.S:269
+  
+  //RESTORE_CONTEXT_EXCPT_X5
+
+  #---- Critical section with interrupts disabled -----------------------
+  DISABLE_MIE # Disable interrupts 
+ 8000630:	30047073          	csrci	mstatus,8
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/entry.S:271
+
+  LOAD x5,  19*REGBYTES(sp)
+ 8000634:	42b6                	lw	t0,76(sp)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/entry.S:272
+  csrw CSR_MSUBM, x5  
+ 8000636:	7c429073          	csrw	0x7c4,t0
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/entry.S:273
+  LOAD x5,  18*REGBYTES(sp)
+ 800063a:	42a6                	lw	t0,72(sp)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/entry.S:274
+  csrw CSR_MEPC, x5  
+ 800063c:	34129073          	csrw	mepc,t0
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/entry.S:275
+  LOAD x5,  17*REGBYTES(sp)
+ 8000640:	4296                	lw	t0,68(sp)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/entry.S:276
+  csrw CSR_MCAUSE, x5  
+ 8000642:	34229073          	csrw	mcause,t0
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/entry.S:279
+
+
+  RESTORE_CONTEXT
+ 8000646:	4082                	lw	ra,0(sp)
+ 8000648:	4212                	lw	tp,4(sp)
+ 800064a:	42a2                	lw	t0,8(sp)
+ 800064c:	4332                	lw	t1,12(sp)
+ 800064e:	43c2                	lw	t2,16(sp)
+ 8000650:	4552                	lw	a0,20(sp)
+ 8000652:	45e2                	lw	a1,24(sp)
+ 8000654:	4672                	lw	a2,28(sp)
+ 8000656:	5682                	lw	a3,32(sp)
+ 8000658:	5712                	lw	a4,36(sp)
+ 800065a:	57a2                	lw	a5,40(sp)
+ 800065c:	5832                	lw	a6,44(sp)
+ 800065e:	58c2                	lw	a7,48(sp)
+ 8000660:	5e52                	lw	t3,52(sp)
+ 8000662:	5ee2                	lw	t4,56(sp)
+ 8000664:	5f72                	lw	t5,60(sp)
+ 8000666:	4f86                	lw	t6,64(sp)
+ 8000668:	6161                	addi	sp,sp,80
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/entry.S:283
+
+  
+  // Return to regular code
+  mret
+ 800066a:	30200073          	mret
+
+0800066e <handle_nmi>:
+handle_nmi():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/handlers.c:10
+#include "riscv_encoding.h"
+#include "n200_func.h"
+
+__attribute__((weak)) uintptr_t handle_nmi()
+{
+  write(1, "nmi\n", 5);
+ 800066e:	080005b7          	lui	a1,0x8000
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/handlers.c:9
+{
+ 8000672:	1141                	addi	sp,sp,-16
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/handlers.c:10
+  write(1, "nmi\n", 5);
+ 8000674:	4615                	li	a2,5
+ 8000676:	26458593          	addi	a1,a1,612 # 8000264 <enable_mcycle_minstret+0x36>
+ 800067a:	4505                	li	a0,1
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/handlers.c:9
+{
+ 800067c:	c606                	sw	ra,12(sp)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/handlers.c:10
+  write(1, "nmi\n", 5);
+ 800067e:	2de010ef          	jal	ra,800195c <write>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/handlers.c:11
+  _exit(1);
+ 8000682:	4505                	li	a0,1
+ 8000684:	3bf1                	jal	8000460 <_exit>
+
+08000686 <handle_trap>:
+handle_trap():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/handlers.c:17
+  return 0;
+}
+
+
+__attribute__((weak)) uintptr_t handle_trap(uintptr_t mcause, uintptr_t sp)
+{
+ 8000686:	1141                	addi	sp,sp,-16
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/handlers.c:18
+  if(mcause == 0xFFF) {
+ 8000688:	6785                	lui	a5,0x1
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/handlers.c:17
+{
+ 800068a:	c422                	sw	s0,8(sp)
+ 800068c:	c606                	sw	ra,12(sp)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/handlers.c:18
+  if(mcause == 0xFFF) {
+ 800068e:	17fd                	addi	a5,a5,-1
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/handlers.c:17
+{
+ 8000690:	842a                	mv	s0,a0
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/handlers.c:18
+  if(mcause == 0xFFF) {
+ 8000692:	00f51363          	bne	a0,a5,8000698 <handle_trap+0x12>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/handlers.c:19
+      handle_nmi();
+ 8000696:	3fe1                	jal	800066e <handle_nmi>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/handlers.c:21
+  }
+  write(1, "trap\n", 5);
+ 8000698:	080005b7          	lui	a1,0x8000
+ 800069c:	4615                	li	a2,5
+ 800069e:	26c58593          	addi	a1,a1,620 # 800026c <enable_mcycle_minstret+0x3e>
+ 80006a2:	4505                	li	a0,1
+ 80006a4:	2b8010ef          	jal	ra,800195c <write>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/handlers.c:25
+  //printf("In trap handler, the mcause is %d\n", mcause);
+  //printf("In trap handler, the mepc is 0x%x\n", read_csr(mepc));
+  //printf("In trap handler, the mtval is 0x%x\n", read_csr(mbadaddr));
+  _exit(mcause);
+ 80006a8:	8522                	mv	a0,s0
+ 80006aa:	3b5d                	jal	8000460 <_exit>
+
+080006ac <_init>:
+_init():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/init.c:11
+#include "riscv_encoding.h"
+#include "n200_func.h"
+
+extern uint32_t disable_mcycle_minstret();
+void _init()
+{
+ 80006ac:	1141                	addi	sp,sp,-16
+ 80006ae:	c606                	sw	ra,12(sp)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/init.c:12
+	SystemInit();
+ 80006b0:	22a9                	jal	80007fa <SystemInit>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/init.c:15
+
+	//ECLIC init
+	eclic_init(ECLIC_NUM_INTERRUPTS);
+ 80006b2:	05700513          	li	a0,87
+ 80006b6:	2831                	jal	80006d2 <eclic_init>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/init.c:16
+	eclic_mode_enable();
+ 80006b8:	2835                	jal	80006f4 <eclic_mode_enable>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/init.c:30
+	//switch_m2u_mode();
+	
+    /* Before enter into main, add the cycle/instret disable by default to save power,
+    only use them when needed to measure the cycle/instret */
+	disable_mcycle_minstret();
+}
+ 80006ba:	40b2                	lw	ra,12(sp)
+ 80006bc:	0141                	addi	sp,sp,16
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/init.c:29
+	disable_mcycle_minstret();
+ 80006be:	b6ad                	j	8000228 <disable_mcycle_minstret>
+
+080006c0 <_fini>:
+_fini():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/env_Eclipse/init.c:34
+
+void _fini()
+{
+}
+ 80006c0:	8082                	ret
+
+080006c2 <get_timer_value>:
+mtime_hi():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/drivers/n200_func.c:39
+}
+
+
+uint32_t mtime_hi(void)
+{
+  return *(volatile uint32_t *)(TIMER_CTRL_ADDR + TIMER_MTIME + 4);
+ 80006c2:	d10007b7          	lui	a5,0xd1000
+ 80006c6:	43d8                	lw	a4,4(a5)
+mtime_lo():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/drivers/n200_func.c:33
+  return *(volatile uint32_t *)(TIMER_CTRL_ADDR + TIMER_MTIME);
+ 80006c8:	4388                	lw	a0,0(a5)
+mtime_hi():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/drivers/n200_func.c:39
+  return *(volatile uint32_t *)(TIMER_CTRL_ADDR + TIMER_MTIME + 4);
+ 80006ca:	43cc                	lw	a1,4(a5)
+get_timer_value():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/drivers/n200_func.c:47
+uint64_t get_timer_value()
+{
+  while (1) {
+    uint32_t hi = mtime_hi();
+    uint32_t lo = mtime_lo();
+    if (hi == mtime_hi())
+ 80006cc:	fee59de3          	bne	a1,a4,80006c6 <get_timer_value+0x4>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/drivers/n200_func.c:50
+      return ((uint64_t)hi << 32) | lo;
+  }
+}
+ 80006d0:	8082                	ret
+
+080006d2 <eclic_init>:
+eclic_init():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/drivers/n200_func.c:126
+{
+
+  typedef volatile uint32_t vuint32_t;
+
+  //clear cfg register 
+  *(volatile uint8_t*)(ECLIC_ADDR_BASE+ECLIC_CFG_OFFSET)=0;
+ 80006d2:	d20007b7          	lui	a5,0xd2000
+ 80006d6:	00078023          	sb	zero,0(a5) # d2000000 <_sp+0xb1ff8000>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/drivers/n200_func.c:129
+
+  //clear minthresh register 
+  *(volatile uint8_t*)(ECLIC_ADDR_BASE+ECLIC_MTH_OFFSET)=0;
+ 80006da:	000785a3          	sb	zero,11(a5)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/drivers/n200_func.c:135
+
+  //clear all IP/IE/ATTR/CTRL bits for all interrupt sources
+  vuint32_t * ptr;
+
+  vuint32_t * base = (vuint32_t*)(ECLIC_ADDR_BASE + ECLIC_INT_IP_OFFSET);
+  vuint32_t * upper = (vuint32_t*)(base + num_irq*4);
+ 80006de:	0512                	slli	a0,a0,0x4
+ 80006e0:	d20017b7          	lui	a5,0xd2001
+ 80006e4:	953e                	add	a0,a0,a5
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/drivers/n200_func.c:137 (discriminator 1)
+
+  for (ptr = base; ptr < upper; ptr=ptr+4){
+ 80006e6:	00a7e363          	bltu	a5,a0,80006ec <eclic_init+0x1a>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/drivers/n200_func.c:140
+    *ptr = 0;
+  }
+}
+ 80006ea:	8082                	ret
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/drivers/n200_func.c:138 (discriminator 3)
+    *ptr = 0;
+ 80006ec:	0007a023          	sw	zero,0(a5) # d2001000 <_sp+0xb1ff9000>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/drivers/n200_func.c:137 (discriminator 3)
+  for (ptr = base; ptr < upper; ptr=ptr+4){
+ 80006f0:	07c1                	addi	a5,a5,16
+ 80006f2:	bfd5                	j	80006e6 <eclic_init+0x14>
+
+080006f4 <eclic_mode_enable>:
+eclic_mode_enable():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/drivers/n200_func.c:333
+
+	return priority;
+}
+
+void eclic_mode_enable() {
+  uint32_t mtvec_value = read_csr(mtvec);
+ 80006f4:	305027f3          	csrr	a5,mtvec
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/drivers/n200_func.c:334
+  mtvec_value = mtvec_value & 0xFFFFFFC0;
+ 80006f8:	fc07f793          	andi	a5,a5,-64
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/drivers/n200_func.c:335
+  mtvec_value = mtvec_value | 0x00000003;
+ 80006fc:	0037e793          	ori	a5,a5,3
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/drivers/n200_func.c:336
+  write_csr(mtvec,mtvec_value);
+ 8000700:	30579073          	csrw	mtvec,a5
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/RISCV/drivers/n200_func.c:337
+}
+ 8000704:	8082                	ret
+
+08000706 <gpio_init>:
+gpio_init():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:134
+
+    /* GPIO mode configuration */
+    temp_mode = (uint32_t) (mode & ((uint32_t) 0x0FU));
+
+    /* GPIO speed configuration */
+    if (((uint32_t) 0x00U) != ((uint32_t) mode & ((uint32_t) 0x10U))) {
+ 8000706:	0105f793          	andi	a5,a1,16
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:131
+    temp_mode = (uint32_t) (mode & ((uint32_t) 0x0FU));
+ 800070a:	00f5f893          	andi	a7,a1,15
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:134
+    if (((uint32_t) 0x00U) != ((uint32_t) mode & ((uint32_t) 0x10U))) {
+ 800070e:	c399                	beqz	a5,8000714 <gpio_init+0xe>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:136
+        /* output mode max speed:10MHz,2MHz,50MHz */
+        temp_mode |= (uint32_t) speed;
+ 8000710:	00c8e8b3          	or	a7,a7,a2
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:125
+{
+ 8000714:	4781                	li	a5,0
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:141
+    }
+
+    /* configure the eight low port pins with GPIO_CTL0 */
+    for (i = 0U; i < 8U; i++) {
+        if ((1U << i) & pin) {
+ 8000716:	4e05                	li	t3,1
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:145
+            reg = GPIO_CTL0(gpio_periph);
+
+            /* clear the specified pin mode bits */
+            reg &= ~GPIO_MODE_MASK(i);
+ 8000718:	4ebd                	li	t4,15
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:150
+            /* set the specified pin mode bits */
+            reg |= GPIO_MODE_SET(i, temp_mode);
+
+            /* set IPD or IPU */
+            if (GPIO_MODE_IPD == mode) {
+ 800071a:	02800f13          	li	t5,40
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:155
+                /* reset the corresponding OCTL bit */
+                GPIO_BC(gpio_periph) = (uint32_t) ((1U << i) & pin);
+            } else {
+                /* set the corresponding OCTL bit */
+                if (GPIO_MODE_IPU == mode) {
+ 800071e:	04800f93          	li	t6,72
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:140
+    for (i = 0U; i < 8U; i++) {
+ 8000722:	4321                	li	t1,8
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:141
+        if ((1U << i) & pin) {
+ 8000724:	00fe1633          	sll	a2,t3,a5
+ 8000728:	8e75                	and	a2,a2,a3
+ 800072a:	c21d                	beqz	a2,8000750 <gpio_init+0x4a>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:142
+            reg = GPIO_CTL0(gpio_periph);
+ 800072c:	00279713          	slli	a4,a5,0x2
+ 8000730:	00052283          	lw	t0,0(a0) # 40011000 <_sp+0x20009000>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:145
+            reg &= ~GPIO_MODE_MASK(i);
+ 8000734:	00ee9833          	sll	a6,t4,a4
+ 8000738:	fff84813          	not	a6,a6
+ 800073c:	00587833          	and	a6,a6,t0
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:147
+            reg |= GPIO_MODE_SET(i, temp_mode);
+ 8000740:	00e89733          	sll	a4,a7,a4
+ 8000744:	01076733          	or	a4,a4,a6
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:150
+            if (GPIO_MODE_IPD == mode) {
+ 8000748:	05e59963          	bne	a1,t5,800079a <gpio_init+0x94>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:152
+                GPIO_BC(gpio_periph) = (uint32_t) ((1U << i) & pin);
+ 800074c:	c950                	sw	a2,20(a0)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:160
+                    GPIO_BOP(gpio_periph) = (uint32_t) ((1U << i) & pin);
+                }
+            }
+            /* set GPIO_CTL0 register */
+            GPIO_CTL0(gpio_periph) = reg;
+ 800074e:	c118                	sw	a4,0(a0)
+ 8000750:	0785                	addi	a5,a5,1
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:140 (discriminator 2)
+    for (i = 0U; i < 8U; i++) {
+ 8000752:	fc6799e3          	bne	a5,t1,8000724 <gpio_init+0x1e>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:165
+        }
+    }
+    /* configure the eight high port pins with GPIO_CTL1 */
+    for (i = 8U; i < 16U; i++) {
+        if ((1U << i) & pin) {
+ 8000756:	4e05                	li	t3,1
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:169
+            reg = GPIO_CTL1(gpio_periph);
+
+            /* clear the specified pin mode bits */
+            reg &= ~GPIO_MODE_MASK(i - 8U);
+ 8000758:	4ebd                	li	t4,15
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:174
+            /* set the specified pin mode bits */
+            reg |= GPIO_MODE_SET(i - 8U, temp_mode);
+
+            /* set IPD or IPU */
+            if (GPIO_MODE_IPD == mode) {
+ 800075a:	02800f13          	li	t5,40
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:179
+                /* reset the corresponding OCTL bit */
+                GPIO_BC(gpio_periph) = (uint32_t) ((1U << i) & pin);
+            } else {
+                /* set the corresponding OCTL bit */
+                if (GPIO_MODE_IPU == mode) {
+ 800075e:	04800f93          	li	t6,72
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:164
+    for (i = 8U; i < 16U; i++) {
+ 8000762:	4341                	li	t1,16
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:165
+        if ((1U << i) & pin) {
+ 8000764:	00fe1633          	sll	a2,t3,a5
+ 8000768:	8e75                	and	a2,a2,a3
+ 800076a:	c605                	beqz	a2,8000792 <gpio_init+0x8c>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:169
+            reg &= ~GPIO_MODE_MASK(i - 8U);
+ 800076c:	00279713          	slli	a4,a5,0x2
+ 8000770:	1701                	addi	a4,a4,-32
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:166
+            reg = GPIO_CTL1(gpio_periph);
+ 8000772:	00452283          	lw	t0,4(a0)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:169
+            reg &= ~GPIO_MODE_MASK(i - 8U);
+ 8000776:	00ee9833          	sll	a6,t4,a4
+ 800077a:	fff84813          	not	a6,a6
+ 800077e:	00587833          	and	a6,a6,t0
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:171
+            reg |= GPIO_MODE_SET(i - 8U, temp_mode);
+ 8000782:	00e89733          	sll	a4,a7,a4
+ 8000786:	01076733          	or	a4,a4,a6
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:174
+            if (GPIO_MODE_IPD == mode) {
+ 800078a:	01e59c63          	bne	a1,t5,80007a2 <gpio_init+0x9c>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:176
+                GPIO_BC(gpio_periph) = (uint32_t) ((1U << i) & pin);
+ 800078e:	c950                	sw	a2,20(a0)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:184
+                    GPIO_BOP(gpio_periph) = (uint32_t) ((1U << i) & pin);
+                }
+            }
+            /* set GPIO_CTL1 register */
+            GPIO_CTL1(gpio_periph) = reg;
+ 8000790:	c158                	sw	a4,4(a0)
+ 8000792:	0785                	addi	a5,a5,1
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:164 (discriminator 2)
+    for (i = 8U; i < 16U; i++) {
+ 8000794:	fc6798e3          	bne	a5,t1,8000764 <gpio_init+0x5e>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:187
+        }
+    }
+}
+ 8000798:	8082                	ret
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:155
+                if (GPIO_MODE_IPU == mode) {
+ 800079a:	fbf59ae3          	bne	a1,t6,800074e <gpio_init+0x48>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:156
+                    GPIO_BOP(gpio_periph) = (uint32_t) ((1U << i) & pin);
+ 800079e:	c910                	sw	a2,16(a0)
+ 80007a0:	b77d                	j	800074e <gpio_init+0x48>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:179
+                if (GPIO_MODE_IPU == mode) {
+ 80007a2:	fff597e3          	bne	a1,t6,8000790 <gpio_init+0x8a>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:180
+                    GPIO_BOP(gpio_periph) = (uint32_t) ((1U << i) & pin);
+ 80007a6:	c910                	sw	a2,16(a0)
+ 80007a8:	b7e5                	j	8000790 <gpio_init+0x8a>
+
+080007aa <gpio_bit_set>:
+gpio_bit_set():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:200
+    \param[out] none
+    \retval     none
+*/
+void gpio_bit_set(uint32_t gpio_periph, uint32_t pin)
+{
+    GPIO_BOP(gpio_periph) = (uint32_t) pin;
+ 80007aa:	c90c                	sw	a1,16(a0)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:201
+}
+ 80007ac:	8082                	ret
+
+080007ae <gpio_bit_reset>:
+gpio_bit_reset():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:214
+    \param[out] none
+    \retval     none
+*/
+void gpio_bit_reset(uint32_t gpio_periph, uint32_t pin)
+{
+    GPIO_BC(gpio_periph) = (uint32_t) pin;
+ 80007ae:	c94c                	sw	a1,20(a0)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:215
+}
+ 80007b0:	8082                	ret
+
+080007b2 <gpio_bit_write>:
+gpio_bit_write():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:232
+    \param[out] none
+    \retval     none
+*/
+void gpio_bit_write(uint32_t gpio_periph, uint32_t pin, bit_status bit_value)
+{
+    if (RESET != bit_value) {
+ 80007b2:	c219                	beqz	a2,80007b8 <gpio_bit_write+0x6>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:233
+        GPIO_BOP(gpio_periph) = (uint32_t) pin;
+ 80007b4:	c90c                	sw	a1,16(a0)
+ 80007b6:	8082                	ret
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:235
+    } else {
+        GPIO_BC(gpio_periph) = (uint32_t) pin;
+ 80007b8:	c94c                	sw	a1,20(a0)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:237
+    }
+}
+ 80007ba:	8082                	ret
+
+080007bc <gpio_input_bit_get>:
+gpio_input_bit_get():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:262
+    \param[out] none
+    \retval     input status of gpio pin: SET or RESET
+*/
+FlagStatus gpio_input_bit_get(uint32_t gpio_periph, uint32_t pin)
+{
+    if ((uint32_t) RESET != (GPIO_ISTAT(gpio_periph) & (pin))) {
+ 80007bc:	4508                	lw	a0,8(a0)
+ 80007be:	8d6d                	and	a0,a0,a1
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c:267
+        return SET;
+    } else {
+        return RESET;
+    }
+}
+ 80007c0:	00a03533          	snez	a0,a0
+ 80007c4:	8082                	ret
+
+080007c6 <rcu_periph_clock_enable>:
+rcu_periph_clock_enable():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_rcu.c:99
+    \param[out] none
+    \retval     none
+*/
+void rcu_periph_clock_enable(rcu_periph_enum periph)
+{
+    RCU_REG_VAL(periph) |= BIT(RCU_BIT_POS(periph));
+ 80007c6:	400217b7          	lui	a5,0x40021
+ 80007ca:	00655713          	srli	a4,a0,0x6
+ 80007ce:	973e                	add	a4,a4,a5
+ 80007d0:	4314                	lw	a3,0(a4)
+ 80007d2:	4785                	li	a5,1
+ 80007d4:	00a797b3          	sll	a5,a5,a0
+ 80007d8:	8fd5                	or	a5,a5,a3
+ 80007da:	c31c                	sw	a5,0(a4)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_rcu.c:100
+}
+ 80007dc:	8082                	ret
+
+080007de <usart_data_transmit>:
+usart_data_transmit():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c:248
+    \param[out] none
+    \retval     none
+*/
+void usart_data_transmit(uint32_t usart_periph, uint32_t data)
+{
+    USART_DATA(usart_periph) = USART_DATA_DATA & data;
+ 80007de:	1ff5f593          	andi	a1,a1,511
+ 80007e2:	c14c                	sw	a1,4(a0)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c:249
+}
+ 80007e4:	8082                	ret
+
+080007e6 <usart_flag_get>:
+usart_flag_get():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c:649
+    \param[out] none
+    \retval     FlagStatus: SET or RESET
+*/
+FlagStatus usart_flag_get(uint32_t usart_periph, usart_flag_enum flag)
+{
+    if(RESET != (USART_REG_VAL(usart_periph, flag) & BIT(USART_BIT_POS(flag)))){
+ 80007e6:	0065d793          	srli	a5,a1,0x6
+ 80007ea:	3ff7f793          	andi	a5,a5,1023
+ 80007ee:	953e                	add	a0,a0,a5
+ 80007f0:	4108                	lw	a0,0(a0)
+ 80007f2:	00b55533          	srl	a0,a0,a1
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/Source/gd32vf103_usart.c:654
+        return SET;
+    }else{
+        return RESET;
+    }
+}
+ 80007f6:	8905                	andi	a0,a0,1
+ 80007f8:	8082                	ret
+
+080007fa <SystemInit>:
+SystemInit():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:153
+*/
+void SystemInit(void)
+{
+    /* reset the RCC clock configuration to the default reset state */
+    /* enable IRC8M */
+    RCU_CTL |= RCU_CTL_IRC8MEN;
+ 80007fa:	400217b7          	lui	a5,0x40021
+ 80007fe:	4398                	lw	a4,0(a5)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:156
+    
+    /* reset SCS, AHBPSC, APB1PSC, APB2PSC, ADCPSC, CKOUT0SEL bits */
+    RCU_CFG0 &= ~(RCU_CFG0_SCS | RCU_CFG0_AHBPSC | RCU_CFG0_APB1PSC | RCU_CFG0_APB2PSC |
+ 8000800:	e0ff06b7          	lui	a3,0xe0ff0
+ 8000804:	06b1                	addi	a3,a3,12
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:153
+    RCU_CTL |= RCU_CTL_IRC8MEN;
+ 8000806:	00176713          	ori	a4,a4,1
+ 800080a:	c398                	sw	a4,0(a5)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:156
+    RCU_CFG0 &= ~(RCU_CFG0_SCS | RCU_CFG0_AHBPSC | RCU_CFG0_APB1PSC | RCU_CFG0_APB2PSC |
+ 800080c:	43d8                	lw	a4,4(a5)
+ 800080e:	8f75                	and	a4,a4,a3
+ 8000810:	c3d8                	sw	a4,4(a5)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:160
+                  RCU_CFG0_ADCPSC | RCU_CFG0_ADCPSC_2 | RCU_CFG0_CKOUT0SEL);
+
+    /* reset HXTALEN, CKMEN, PLLEN bits */
+    RCU_CTL &= ~(RCU_CTL_HXTALEN | RCU_CTL_CKMEN | RCU_CTL_PLLEN);
+ 8000812:	4398                	lw	a4,0(a5)
+ 8000814:	fef706b7          	lui	a3,0xfef70
+ 8000818:	16fd                	addi	a3,a3,-1
+ 800081a:	8f75                	and	a4,a4,a3
+ 800081c:	c398                	sw	a4,0(a5)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:163
+
+    /* Reset HXTALBPS bit */
+    RCU_CTL &= ~(RCU_CTL_HXTALBPS);
+ 800081e:	4398                	lw	a4,0(a5)
+ 8000820:	fffc06b7          	lui	a3,0xfffc0
+ 8000824:	16fd                	addi	a3,a3,-1
+ 8000826:	8f75                	and	a4,a4,a3
+ 8000828:	c398                	sw	a4,0(a5)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:167
+
+    /* reset PLLSEL, PREDV0_LSB, PLLMF, USBFSPSC bits */
+    
+    RCU_CFG0 &= ~(RCU_CFG0_PLLSEL | RCU_CFG0_PREDV0_LSB | RCU_CFG0_PLLMF |
+ 800082a:	43d8                	lw	a4,4(a5)
+ 800082c:	df0106b7          	lui	a3,0xdf010
+ 8000830:	16fd                	addi	a3,a3,-1
+ 8000832:	8f75                	and	a4,a4,a3
+ 8000834:	c3d8                	sw	a4,4(a5)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:169
+                  RCU_CFG0_USBFSPSC | RCU_CFG0_PLLMF_4);
+    RCU_CFG1 = 0x00000000U;
+ 8000836:	0207a623          	sw	zero,44(a5) # 4002102c <_sp+0x2001902c>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:172
+
+    /* Reset HXTALEN, CKMEN, PLLEN, PLL1EN and PLL2EN bits */
+    RCU_CTL &= ~(RCU_CTL_PLLEN | RCU_CTL_PLL1EN | RCU_CTL_PLL2EN | RCU_CTL_CKMEN | RCU_CTL_HXTALEN);
+ 800083a:	4398                	lw	a4,0(a5)
+ 800083c:	eaf706b7          	lui	a3,0xeaf70
+ 8000840:	16fd                	addi	a3,a3,-1
+ 8000842:	8f75                	and	a4,a4,a3
+ 8000844:	c398                	sw	a4,0(a5)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:174
+    /* disable all interrupts */
+    RCU_INT = 0x00FF0000U;
+ 8000846:	00ff0737          	lui	a4,0xff0
+ 800084a:	c798                	sw	a4,8(a5)
+system_clock_108m_hxtal():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:756
+{
+    uint32_t timeout   = 0U;
+    uint32_t stab_flag = 0U;
+
+    /* enable HXTAL */
+    RCU_CTL |= RCU_CTL_HXTALEN;
+ 800084c:	4394                	lw	a3,0(a5)
+ 800084e:	6741                	lui	a4,0x10
+ 8000850:	8ed9                	or	a3,a3,a4
+ 8000852:	c394                	sw	a3,0(a5)
+ 8000854:	fff70793          	addi	a5,a4,-1 # ffff <__stack_size+0xf7ff>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:761
+
+    /* wait until HXTAL is stable or the startup time is longer than HXTAL_STARTUP_TIMEOUT */
+    do{
+        timeout++;
+        stab_flag = (RCU_CTL & RCU_CTL_HXTALSTB);
+ 8000858:	40021737          	lui	a4,0x40021
+ 800085c:	4314                	lw	a3,0(a4)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:762
+    }while((0U == stab_flag) && (HXTAL_STARTUP_TIMEOUT != timeout));
+ 800085e:	00e69613          	slli	a2,a3,0xe
+ 8000862:	00064463          	bltz	a2,800086a <SystemInit+0x70>
+ 8000866:	17fd                	addi	a5,a5,-1
+ 8000868:	fbf5                	bnez	a5,800085c <SystemInit+0x62>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:765
+
+    /* if fail */
+    if(0U == (RCU_CTL & RCU_CTL_HXTALSTB)){
+ 800086a:	400217b7          	lui	a5,0x40021
+ 800086e:	4398                	lw	a4,0(a5)
+ 8000870:	00e71693          	slli	a3,a4,0xe
+ 8000874:	0006c363          	bltz	a3,800087a <SystemInit+0x80>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:767
+        while(1){
+        }
+ 8000878:	a001                	j	8000878 <SystemInit+0x7e>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:772
+    }
+
+    /* HXTAL is stable */
+    /* AHB = SYSCLK */
+    RCU_CFG0 |= RCU_AHB_CKSYS_DIV1;
+ 800087a:	43d8                	lw	a4,4(a5)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:779
+    RCU_CFG0 |= RCU_APB2_CKAHB_DIV1;
+    /* APB1 = AHB/2 */
+    RCU_CFG0 |= RCU_APB1_CKAHB_DIV2;
+
+    /* CK_PLL = (CK_PREDIV0) * 27 = 108 MHz */ 
+    RCU_CFG0 &= ~(RCU_CFG0_PLLMF | RCU_CFG0_PLLMF_4);
+ 800087c:	dfc406b7          	lui	a3,0xdfc40
+ 8000880:	16fd                	addi	a3,a3,-1
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:772
+    RCU_CFG0 |= RCU_AHB_CKSYS_DIV1;
+ 8000882:	c3d8                	sw	a4,4(a5)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:774
+    RCU_CFG0 |= RCU_APB2_CKAHB_DIV1;
+ 8000884:	43d8                	lw	a4,4(a5)
+ 8000886:	c3d8                	sw	a4,4(a5)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:776
+    RCU_CFG0 |= RCU_APB1_CKAHB_DIV2;
+ 8000888:	43d8                	lw	a4,4(a5)
+ 800088a:	40076713          	ori	a4,a4,1024
+ 800088e:	c3d8                	sw	a4,4(a5)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:779
+    RCU_CFG0 &= ~(RCU_CFG0_PLLMF | RCU_CFG0_PLLMF_4);
+ 8000890:	43d8                	lw	a4,4(a5)
+ 8000892:	8f75                	and	a4,a4,a3
+ 8000894:	c3d8                	sw	a4,4(a5)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:780
+    RCU_CFG0 |= (RCU_PLLSRC_HXTAL | RCU_PLL_MUL27);
+ 8000896:	43d8                	lw	a4,4(a5)
+ 8000898:	202906b7          	lui	a3,0x20290
+ 800089c:	8f55                	or	a4,a4,a3
+ 800089e:	c3d8                	sw	a4,4(a5)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:799
+		RCU_CTL |= RCU_CTL_PLL2EN;
+		/* wait till PLL1 is ready */
+		while(0U == (RCU_CTL & RCU_CTL_PLL2STB)){
+		}
+    }else if(HXTAL_VALUE==8000000){
+		RCU_CFG1 &= ~(RCU_CFG1_PREDV0SEL | RCU_CFG1_PREDV1 | RCU_CFG1_PLL1MF | RCU_CFG1_PREDV0);
+ 80008a0:	57d8                	lw	a4,44(a5)
+ 80008a2:	76bd                	lui	a3,0xfffef
+ 80008a4:	8f75                	and	a4,a4,a3
+ 80008a6:	d7d8                	sw	a4,44(a5)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:800
+		RCU_CFG1 |= (RCU_PREDV0SRC_HXTAL | RCU_PREDV0_DIV2 | RCU_PREDV1_DIV2 | RCU_PLL1_MUL20 | RCU_PLL2_MUL20);
+ 80008a8:	57d8                	lw	a4,44(a5)
+ 80008aa:	66c1                	lui	a3,0x10
+ 80008ac:	f1168693          	addi	a3,a3,-239 # ff11 <__stack_size+0xf711>
+ 80008b0:	8f55                	or	a4,a4,a3
+ 80008b2:	d7d8                	sw	a4,44(a5)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:803
+
+		/* enable PLL1 */
+		RCU_CTL |= RCU_CTL_PLL1EN;
+ 80008b4:	4398                	lw	a4,0(a5)
+ 80008b6:	040006b7          	lui	a3,0x4000
+ 80008ba:	8f55                	or	a4,a4,a3
+ 80008bc:	c398                	sw	a4,0(a5)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:805
+		/* wait till PLL1 is ready */
+		while(0U == (RCU_CTL & RCU_CTL_PLL1STB)){
+ 80008be:	400217b7          	lui	a5,0x40021
+ 80008c2:	4398                	lw	a4,0(a5)
+ 80008c4:	00471693          	slli	a3,a4,0x4
+ 80008c8:	fe06dde3          	bgez	a3,80008c2 <SystemInit+0xc8>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:809
+		}
+
+		/* enable PLL2 */
+		RCU_CTL |= RCU_CTL_PLL2EN;
+ 80008cc:	4398                	lw	a4,0(a5)
+ 80008ce:	100006b7          	lui	a3,0x10000
+ 80008d2:	8f55                	or	a4,a4,a3
+ 80008d4:	c398                	sw	a4,0(a5)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:811
+		/* wait till PLL1 is ready */
+		while(0U == (RCU_CTL & RCU_CTL_PLL2STB)){
+ 80008d6:	400217b7          	lui	a5,0x40021
+ 80008da:	4398                	lw	a4,0(a5)
+ 80008dc:	00271693          	slli	a3,a4,0x2
+ 80008e0:	fe06dde3          	bgez	a3,80008da <SystemInit+0xe0>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:816
+		}
+
+    }
+    /* enable PLL */
+    RCU_CTL |= RCU_CTL_PLLEN;
+ 80008e4:	4398                	lw	a4,0(a5)
+ 80008e6:	010006b7          	lui	a3,0x1000
+ 80008ea:	8f55                	or	a4,a4,a3
+ 80008ec:	c398                	sw	a4,0(a5)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:819
+
+    /* wait until PLL is stable */
+    while(0U == (RCU_CTL & RCU_CTL_PLLSTB)){
+ 80008ee:	400217b7          	lui	a5,0x40021
+ 80008f2:	4398                	lw	a4,0(a5)
+ 80008f4:	00671693          	slli	a3,a4,0x6
+ 80008f8:	fe06dde3          	bgez	a3,80008f2 <SystemInit+0xf8>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:823
+    }
+
+    /* select PLL as system clock */
+    RCU_CFG0 &= ~RCU_CFG0_SCS;
+ 80008fc:	43d8                	lw	a4,4(a5)
+ 80008fe:	9b71                	andi	a4,a4,-4
+ 8000900:	c3d8                	sw	a4,4(a5)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:824
+    RCU_CFG0 |= RCU_CKSYSSRC_PLL;
+ 8000902:	43d8                	lw	a4,4(a5)
+ 8000904:	00276713          	ori	a4,a4,2
+ 8000908:	c3d8                	sw	a4,4(a5)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:827
+
+    /* wait until PLL is selected as system clock */
+    while(0U == (RCU_CFG0 & RCU_SCSS_PLL)){
+ 800090a:	40021737          	lui	a4,0x40021
+ 800090e:	435c                	lw	a5,4(a4)
+ 8000910:	8ba1                	andi	a5,a5,8
+ 8000912:	dff5                	beqz	a5,800090e <SystemInit+0x114>
+SystemInit():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Firmware_Library/GD32VF103_standard_peripheral/system_gd32vf103.c:178
+}
+ 8000914:	8082                	ret
+
+08000916 <led_init>:
+led_init():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:85
+    \param[in]  none
+    \param[out] none
+    \retval     none
+*/
+void led_init(void)
+{
+ 8000916:	1141                	addi	sp,sp,-16
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:87
+    /* enable the LED clock */
+   rcu_periph_clock_enable(RCU_GPIOC);
+ 8000918:	60400513          	li	a0,1540
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:85
+{
+ 800091c:	c606                	sw	ra,12(sp)
+ 800091e:	c422                	sw	s0,8(sp)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:87
+   rcu_periph_clock_enable(RCU_GPIOC);
+ 8000920:	355d                	jal	80007c6 <rcu_periph_clock_enable>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:88
+   rcu_periph_clock_enable(RCU_GPIOE);
+ 8000922:	60600513          	li	a0,1542
+ 8000926:	3545                	jal	80007c6 <rcu_periph_clock_enable>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:90
+   /* configure LED GPIO port */
+   gpio_init(GPIOC, GPIO_MODE_OUT_PP, GPIO_OSPEED_50MHZ, GPIO_PIN_0 | GPIO_PIN_2);
+ 8000928:	4695                	li	a3,5
+ 800092a:	460d                	li	a2,3
+ 800092c:	45c1                	li	a1,16
+ 800092e:	40011537          	lui	a0,0x40011
+ 8000932:	3bd1                	jal	8000706 <gpio_init>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:91
+   gpio_init(GPIOE, GPIO_MODE_OUT_PP, GPIO_OSPEED_50MHZ, GPIO_PIN_0 | GPIO_PIN_1);
+ 8000934:	40012437          	lui	s0,0x40012
+ 8000938:	80040513          	addi	a0,s0,-2048 # 40011800 <_sp+0x20009800>
+ 800093c:	468d                	li	a3,3
+ 800093e:	460d                	li	a2,3
+ 8000940:	45c1                	li	a1,16
+ 8000942:	33d1                	jal	8000706 <gpio_init>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:94
+
+   /* turn off LEDs */
+   gpio_bit_reset(GPIOC, GPIO_PIN_0 | GPIO_PIN_2);
+ 8000944:	4595                	li	a1,5
+ 8000946:	40011537          	lui	a0,0x40011
+ 800094a:	3595                	jal	80007ae <gpio_bit_reset>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:95
+   gpio_bit_reset(GPIOE, GPIO_PIN_0 | GPIO_PIN_1);
+ 800094c:	80040513          	addi	a0,s0,-2048
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:96
+}
+ 8000950:	4422                	lw	s0,8(sp)
+ 8000952:	40b2                	lw	ra,12(sp)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:95
+   gpio_bit_reset(GPIOE, GPIO_PIN_0 | GPIO_PIN_1);
+ 8000954:	458d                	li	a1,3
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:96
+}
+ 8000956:	0141                	addi	sp,sp,16
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:95
+   gpio_bit_reset(GPIOE, GPIO_PIN_0 | GPIO_PIN_1);
+ 8000958:	bd99                	j	80007ae <gpio_bit_reset>
+
+0800095a <led_flash>:
+led_flash():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:105
+    \param[in]  times: times to flash the LEDs
+    \param[out] none
+    \retval     none
+*/
+void led_flash(int times)
+{
+ 800095a:	1141                	addi	sp,sp,-16
+ 800095c:	c422                	sw	s0,8(sp)
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:113
+        /* delay 400 ms */
+        delay_1ms(400);
+
+        /* turn on LEDs */
+        gpio_bit_set(GPIOC, GPIO_PIN_0 | GPIO_PIN_2);
+        gpio_bit_set(GPIOE, GPIO_PIN_0 | GPIO_PIN_1);
+ 800095e:	40012437          	lui	s0,0x40012
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:105
+{
+ 8000962:	c226                	sw	s1,4(sp)
+ 8000964:	c04a                	sw	s2,0(sp)
+ 8000966:	c606                	sw	ra,12(sp)
+ 8000968:	892a                	mv	s2,a0
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:107
+    for(i=0; i<times; i++){
+ 800096a:	4481                	li	s1,0
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:113
+        gpio_bit_set(GPIOE, GPIO_PIN_0 | GPIO_PIN_1);
+ 800096c:	80040413          	addi	s0,s0,-2048 # 40011800 <_sp+0x20009800>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:107 (discriminator 1)
+    for(i=0; i<times; i++){
+ 8000970:	0124c863          	blt	s1,s2,8000980 <led_flash+0x26>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:121
+        delay_1ms(400);
+        /* turn off LEDs */
+        gpio_bit_reset(GPIOC, GPIO_PIN_0 | GPIO_PIN_2);
+        gpio_bit_reset(GPIOE, GPIO_PIN_0 | GPIO_PIN_1);
+    }
+}
+ 8000974:	40b2                	lw	ra,12(sp)
+ 8000976:	4422                	lw	s0,8(sp)
+ 8000978:	4492                	lw	s1,4(sp)
+ 800097a:	4902                	lw	s2,0(sp)
+ 800097c:	0141                	addi	sp,sp,16
+ 800097e:	8082                	ret
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:109 (discriminator 3)
+        delay_1ms(400);
+ 8000980:	19000513          	li	a0,400
+ 8000984:	2025                	jal	80009ac <delay_1ms>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:112 (discriminator 3)
+        gpio_bit_set(GPIOC, GPIO_PIN_0 | GPIO_PIN_2);
+ 8000986:	4595                	li	a1,5
+ 8000988:	40011537          	lui	a0,0x40011
+ 800098c:	3d39                	jal	80007aa <gpio_bit_set>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:113 (discriminator 3)
+        gpio_bit_set(GPIOE, GPIO_PIN_0 | GPIO_PIN_1);
+ 800098e:	458d                	li	a1,3
+ 8000990:	8522                	mv	a0,s0
+ 8000992:	3d21                	jal	80007aa <gpio_bit_set>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:116 (discriminator 3)
+        delay_1ms(400);
+ 8000994:	19000513          	li	a0,400
+ 8000998:	2811                	jal	80009ac <delay_1ms>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:118 (discriminator 3)
+        gpio_bit_reset(GPIOC, GPIO_PIN_0 | GPIO_PIN_2);
+ 800099a:	4595                	li	a1,5
+ 800099c:	40011537          	lui	a0,0x40011
+ 80009a0:	3539                	jal	80007ae <gpio_bit_reset>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:119 (discriminator 3)
+        gpio_bit_reset(GPIOE, GPIO_PIN_0 | GPIO_PIN_1);
+ 80009a2:	458d                	li	a1,3
+ 80009a4:	8522                	mv	a0,s0
+ 80009a6:	3521                	jal	80007ae <gpio_bit_reset>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/main.c:107 (discriminator 3)
+    for(i=0; i<times; i++){
+ 80009a8:	0485                	addi	s1,s1,1
+ 80009aa:	b7d9                	j	8000970 <led_flash+0x16>
+
+080009ac <delay_1ms>:
+delay_1ms():
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/systick.c:45
+    \param[in]  count: count in milliseconds
+    \param[out] none
+    \retval     none
+*/
+void delay_1ms(uint32_t count)
+{
+ 80009ac:	7179                	addi	sp,sp,-48
+ 80009ae:	d04a                	sw	s2,32(sp)
+ 80009b0:	ce4e                	sw	s3,28(sp)
+ 80009b2:	c85a                	sw	s6,16(sp)
+ 80009b4:	d606                	sw	ra,44(sp)
+ 80009b6:	d422                	sw	s0,40(sp)
+ 80009b8:	d226                	sw	s1,36(sp)
+ 80009ba:	cc52                	sw	s4,24(sp)
+ 80009bc:	ca56                	sw	s5,20(sp)
+ 80009be:	c65e                	sw	s7,12(sp)
+ 80009c0:	c462                	sw	s8,8(sp)
+ 80009c2:	c266                	sw	s9,4(sp)
+ 80009c4:	8b2a                	mv	s6,a0
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/systick.c:49
+    uint64_t start_mtime, delta_mtime;
+
+    /* don't start measuruing until we see an mtime tick */ 
+    uint64_t tmp = get_timer_value();
+ 80009c6:	39f5                	jal	80006c2 <get_timer_value>
+ 80009c8:	89aa                	mv	s3,a0
+ 80009ca:	892e                	mv	s2,a1
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/systick.c:52 (discriminator 1)
+    
+    do{
+        start_mtime = get_timer_value();
+ 80009cc:	39dd                	jal	80006c2 <get_timer_value>
+ 80009ce:	84aa                	mv	s1,a0
+ 80009d0:	842e                	mv	s0,a1
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/systick.c:53 (discriminator 1)
+    }while(start_mtime == tmp);
+ 80009d2:	00a99463          	bne	s3,a0,80009da <delay_1ms+0x2e>
+ 80009d6:	feb90be3          	beq	s2,a1,80009cc <delay_1ms+0x20>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/systick.c:57 (discriminator 1)
+
+    do{
+        delta_mtime = get_timer_value() - start_mtime;
+    }while(delta_mtime <(SystemCoreClock/4000.0 *count));
+ 80009da:	080007b7          	lui	a5,0x8000
+ 80009de:	2787a903          	lw	s2,632(a5) # 8000278 <enable_mcycle_minstret+0x4a>
+ 80009e2:	27c7a983          	lw	s3,636(a5)
+ 80009e6:	20000bb7          	lui	s7,0x20000
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/systick.c:56 (discriminator 1)
+        delta_mtime = get_timer_value() - start_mtime;
+ 80009ea:	39e1                	jal	80006c2 <get_timer_value>
+ 80009ec:	87aa                	mv	a5,a0
+ 80009ee:	8d05                	sub	a0,a0,s1
+ 80009f0:	00a7b7b3          	sltu	a5,a5,a0
+ 80009f4:	8d81                	sub	a1,a1,s0
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/systick.c:57 (discriminator 1)
+    }while(delta_mtime <(SystemCoreClock/4000.0 *count));
+ 80009f6:	8d9d                	sub	a1,a1,a5
+ 80009f8:	3d3000ef          	jal	ra,80015ca <__floatundidf>
+ 80009fc:	8a2a                	mv	s4,a0
+ 80009fe:	060ba503          	lw	a0,96(s7) # 20000060 <SystemCoreClock>
+ 8000a02:	8aae                	mv	s5,a1
+ 8000a04:	361000ef          	jal	ra,8001564 <__floatunsidf>
+ 8000a08:	864a                	mv	a2,s2
+ 8000a0a:	86ce                	mv	a3,s3
+ 8000a0c:	283d                	jal	8000a4a <__divdf3>
+ 8000a0e:	8c2a                	mv	s8,a0
+ 8000a10:	855a                	mv	a0,s6
+ 8000a12:	8cae                	mv	s9,a1
+ 8000a14:	351000ef          	jal	ra,8001564 <__floatunsidf>
+ 8000a18:	862a                	mv	a2,a0
+ 8000a1a:	86ae                	mv	a3,a1
+ 8000a1c:	8562                	mv	a0,s8
+ 8000a1e:	85e6                	mv	a1,s9
+ 8000a20:	2d51                	jal	80010b4 <__muldf3>
+ 8000a22:	862a                	mv	a2,a0
+ 8000a24:	86ae                	mv	a3,a1
+ 8000a26:	8552                	mv	a0,s4
+ 8000a28:	85d6                	mv	a1,s5
+ 8000a2a:	2bd1                	jal	8000ffe <__ledf2>
+ 8000a2c:	fa054fe3          	bltz	a0,80009ea <delay_1ms+0x3e>
+E:/Google_download/GD32VF103_Demo_Suites_V1.0.0/GD32VF103_Demo_Suites_V1.0.0/GD32VF103V_EVAL_Demo_Suites/Projects/02_GPIO_Key_Polling_mode/systick.c:58
+}
+ 8000a30:	50b2                	lw	ra,44(sp)
+ 8000a32:	5422                	lw	s0,40(sp)
+ 8000a34:	5492                	lw	s1,36(sp)
+ 8000a36:	5902                	lw	s2,32(sp)
+ 8000a38:	49f2                	lw	s3,28(sp)
+ 8000a3a:	4a62                	lw	s4,24(sp)
+ 8000a3c:	4ad2                	lw	s5,20(sp)
+ 8000a3e:	4b42                	lw	s6,16(sp)
+ 8000a40:	4bb2                	lw	s7,12(sp)
+ 8000a42:	4c22                	lw	s8,8(sp)
+ 8000a44:	4c92                	lw	s9,4(sp)
+ 8000a46:	6145                	addi	sp,sp,48
+ 8000a48:	8082                	ret
+
+08000a4a <__divdf3>:
+__divdf3():
+ 8000a4a:	7139                	addi	sp,sp,-64
+ 8000a4c:	0145d793          	srli	a5,a1,0x14
+ 8000a50:	dc22                	sw	s0,56(sp)
+ 8000a52:	d84a                	sw	s2,48(sp)
+ 8000a54:	d256                	sw	s5,36(sp)
+ 8000a56:	892a                	mv	s2,a0
+ 8000a58:	00c59413          	slli	s0,a1,0xc
+ 8000a5c:	de06                	sw	ra,60(sp)
+ 8000a5e:	da26                	sw	s1,52(sp)
+ 8000a60:	d64e                	sw	s3,44(sp)
+ 8000a62:	d452                	sw	s4,40(sp)
+ 8000a64:	d05a                	sw	s6,32(sp)
+ 8000a66:	ce5e                	sw	s7,28(sp)
+ 8000a68:	7ff7f513          	andi	a0,a5,2047
+ 8000a6c:	8031                	srli	s0,s0,0xc
+ 8000a6e:	01f5da93          	srli	s5,a1,0x1f
+ 8000a72:	10050b63          	beqz	a0,8000b88 <__divdf3+0x13e>
+ 8000a76:	7ff00793          	li	a5,2047
+ 8000a7a:	14f50b63          	beq	a0,a5,8000bd0 <__divdf3+0x186>
+ 8000a7e:	01d95a13          	srli	s4,s2,0x1d
+ 8000a82:	040e                	slli	s0,s0,0x3
+ 8000a84:	008a6433          	or	s0,s4,s0
+ 8000a88:	00800a37          	lui	s4,0x800
+ 8000a8c:	01446a33          	or	s4,s0,s4
+ 8000a90:	00391b13          	slli	s6,s2,0x3
+ 8000a94:	c0150493          	addi	s1,a0,-1023 # 40010c01 <_sp+0x20008c01>
+ 8000a98:	4401                	li	s0,0
+ 8000a9a:	4b81                	li	s7,0
+ 8000a9c:	0146d813          	srli	a6,a3,0x14
+ 8000aa0:	00c69913          	slli	s2,a3,0xc
+ 8000aa4:	7ff87813          	andi	a6,a6,2047
+ 8000aa8:	88b2                	mv	a7,a2
+ 8000aaa:	00c95913          	srli	s2,s2,0xc
+ 8000aae:	01f6d993          	srli	s3,a3,0x1f
+ 8000ab2:	08080e63          	beqz	a6,8000b4e <__divdf3+0x104>
+ 8000ab6:	7ff00793          	li	a5,2047
+ 8000aba:	04f80063          	beq	a6,a5,8000afa <__divdf3+0xb0>
+ 8000abe:	01d65713          	srli	a4,a2,0x1d
+ 8000ac2:	090e                	slli	s2,s2,0x3
+ 8000ac4:	01276933          	or	s2,a4,s2
+ 8000ac8:	c0180813          	addi	a6,a6,-1023
+ 8000acc:	008007b7          	lui	a5,0x800
+ 8000ad0:	00f96733          	or	a4,s2,a5
+ 8000ad4:	00361893          	slli	a7,a2,0x3
+ 8000ad8:	410484b3          	sub	s1,s1,a6
+ 8000adc:	4581                	li	a1,0
+ 8000ade:	47bd                	li	a5,15
+ 8000ae0:	013ac833          	xor	a6,s5,s3
+ 8000ae4:	1a87e463          	bltu	a5,s0,8000c8c <__divdf3+0x242>
+ 8000ae8:	fffff797          	auipc	a5,0xfffff
+ 8000aec:	79878793          	addi	a5,a5,1944 # 8000280 <enable_mcycle_minstret+0x52>
+ 8000af0:	040a                	slli	s0,s0,0x2
+ 8000af2:	943e                	add	s0,s0,a5
+ 8000af4:	4010                	lw	a2,0(s0)
+ 8000af6:	963e                	add	a2,a2,a5
+ 8000af8:	8602                	jr	a2
+ 8000afa:	00c96733          	or	a4,s2,a2
+ 8000afe:	80148493          	addi	s1,s1,-2047
+ 8000b02:	10071263          	bnez	a4,8000c06 <__divdf3+0x1bc>
+ 8000b06:	00246413          	ori	s0,s0,2
+ 8000b0a:	4881                	li	a7,0
+ 8000b0c:	4589                	li	a1,2
+ 8000b0e:	bfc1                	j	8000ade <__divdf3+0x94>
+ 8000b10:	7ff00613          	li	a2,2047
+ 8000b14:	4781                	li	a5,0
+ 8000b16:	4701                	li	a4,0
+ 8000b18:	07b2                	slli	a5,a5,0xc
+ 8000b1a:	50f2                	lw	ra,60(sp)
+ 8000b1c:	5462                	lw	s0,56(sp)
+ 8000b1e:	0652                	slli	a2,a2,0x14
+ 8000b20:	83b1                	srli	a5,a5,0xc
+ 8000b22:	087e                	slli	a6,a6,0x1f
+ 8000b24:	8fd1                	or	a5,a5,a2
+ 8000b26:	0107e7b3          	or	a5,a5,a6
+ 8000b2a:	54d2                	lw	s1,52(sp)
+ 8000b2c:	5942                	lw	s2,48(sp)
+ 8000b2e:	59b2                	lw	s3,44(sp)
+ 8000b30:	5a22                	lw	s4,40(sp)
+ 8000b32:	5a92                	lw	s5,36(sp)
+ 8000b34:	5b02                	lw	s6,32(sp)
+ 8000b36:	4bf2                	lw	s7,28(sp)
+ 8000b38:	853a                	mv	a0,a4
+ 8000b3a:	85be                	mv	a1,a5
+ 8000b3c:	6121                	addi	sp,sp,64
+ 8000b3e:	8082                	ret
+ 8000b40:	4801                	li	a6,0
+ 8000b42:	7ff00613          	li	a2,2047
+ 8000b46:	000807b7          	lui	a5,0x80
+ 8000b4a:	4701                	li	a4,0
+ 8000b4c:	b7f1                	j	8000b18 <__divdf3+0xce>
+ 8000b4e:	00c96733          	or	a4,s2,a2
+ 8000b52:	c74d                	beqz	a4,8000bfc <__divdf3+0x1b2>
+ 8000b54:	30090863          	beqz	s2,8000e64 <__divdf3+0x41a>
+ 8000b58:	854a                	mv	a0,s2
+ 8000b5a:	c432                	sw	a2,8(sp)
+ 8000b5c:	3f7000ef          	jal	ra,8001752 <__clzsi2>
+ 8000b60:	4622                	lw	a2,8(sp)
+ 8000b62:	ff550713          	addi	a4,a0,-11
+ 8000b66:	47f5                	li	a5,29
+ 8000b68:	ff850693          	addi	a3,a0,-8
+ 8000b6c:	8f99                	sub	a5,a5,a4
+ 8000b6e:	00d91933          	sll	s2,s2,a3
+ 8000b72:	00f657b3          	srl	a5,a2,a5
+ 8000b76:	0127e733          	or	a4,a5,s2
+ 8000b7a:	00d618b3          	sll	a7,a2,a3
+ 8000b7e:	9526                	add	a0,a0,s1
+ 8000b80:	3f350493          	addi	s1,a0,1011
+ 8000b84:	4581                	li	a1,0
+ 8000b86:	bfa1                	j	8000ade <__divdf3+0x94>
+ 8000b88:	01246a33          	or	s4,s0,s2
+ 8000b8c:	060a0363          	beqz	s4,8000bf2 <__divdf3+0x1a8>
+ 8000b90:	c636                	sw	a3,12(sp)
+ 8000b92:	c432                	sw	a2,8(sp)
+ 8000b94:	2a040663          	beqz	s0,8000e40 <__divdf3+0x3f6>
+ 8000b98:	8522                	mv	a0,s0
+ 8000b9a:	3b9000ef          	jal	ra,8001752 <__clzsi2>
+ 8000b9e:	4622                	lw	a2,8(sp)
+ 8000ba0:	46b2                	lw	a3,12(sp)
+ 8000ba2:	84aa                	mv	s1,a0
+ 8000ba4:	ff550713          	addi	a4,a0,-11
+ 8000ba8:	4a75                	li	s4,29
+ 8000baa:	ff848b13          	addi	s6,s1,-8
+ 8000bae:	40ea0a33          	sub	s4,s4,a4
+ 8000bb2:	01641433          	sll	s0,s0,s6
+ 8000bb6:	01495a33          	srl	s4,s2,s4
+ 8000bba:	008a6a33          	or	s4,s4,s0
+ 8000bbe:	01691b33          	sll	s6,s2,s6
+ 8000bc2:	c0d00513          	li	a0,-1011
+ 8000bc6:	409504b3          	sub	s1,a0,s1
+ 8000bca:	4401                	li	s0,0
+ 8000bcc:	4b81                	li	s7,0
+ 8000bce:	b5f9                	j	8000a9c <__divdf3+0x52>
+ 8000bd0:	01246a33          	or	s4,s0,s2
+ 8000bd4:	000a1863          	bnez	s4,8000be4 <__divdf3+0x19a>
+ 8000bd8:	4421                	li	s0,8
+ 8000bda:	4b01                	li	s6,0
+ 8000bdc:	7ff00493          	li	s1,2047
+ 8000be0:	4b89                	li	s7,2
+ 8000be2:	bd6d                	j	8000a9c <__divdf3+0x52>
+ 8000be4:	8a22                	mv	s4,s0
+ 8000be6:	8b4a                	mv	s6,s2
+ 8000be8:	4431                	li	s0,12
+ 8000bea:	7ff00493          	li	s1,2047
+ 8000bee:	4b8d                	li	s7,3
+ 8000bf0:	b575                	j	8000a9c <__divdf3+0x52>
+ 8000bf2:	4411                	li	s0,4
+ 8000bf4:	4b01                	li	s6,0
+ 8000bf6:	4481                	li	s1,0
+ 8000bf8:	4b85                	li	s7,1
+ 8000bfa:	b54d                	j	8000a9c <__divdf3+0x52>
+ 8000bfc:	00146413          	ori	s0,s0,1
+ 8000c00:	4881                	li	a7,0
+ 8000c02:	4585                	li	a1,1
+ 8000c04:	bde9                	j	8000ade <__divdf3+0x94>
+ 8000c06:	00346413          	ori	s0,s0,3
+ 8000c0a:	874a                	mv	a4,s2
+ 8000c0c:	458d                	li	a1,3
+ 8000c0e:	bdc1                	j	8000ade <__divdf3+0x94>
+ 8000c10:	2e050a63          	beqz	a0,8000f04 <__divdf3+0x4ba>
+ 8000c14:	4785                	li	a5,1
+ 8000c16:	8f89                	sub	a5,a5,a0
+ 8000c18:	03800693          	li	a3,56
+ 8000c1c:	32f6dd63          	bge	a3,a5,8000f56 <__divdf3+0x50c>
+ 8000c20:	4601                	li	a2,0
+ 8000c22:	4781                	li	a5,0
+ 8000c24:	4701                	li	a4,0
+ 8000c26:	bdcd                	j	8000b18 <__divdf3+0xce>
+ 8000c28:	86ce                	mv	a3,s3
+ 8000c2a:	4789                	li	a5,2
+ 8000c2c:	3af58d63          	beq	a1,a5,8000fe6 <__divdf3+0x59c>
+ 8000c30:	478d                	li	a5,3
+ 8000c32:	f0f587e3          	beq	a1,a5,8000b40 <__divdf3+0xf6>
+ 8000c36:	4785                	li	a5,1
+ 8000c38:	8836                	mv	a6,a3
+ 8000c3a:	fef583e3          	beq	a1,a5,8000c20 <__divdf3+0x1d6>
+ 8000c3e:	3ff48513          	addi	a0,s1,1023
+ 8000c42:	fca057e3          	blez	a0,8000c10 <__divdf3+0x1c6>
+ 8000c46:	0078f793          	andi	a5,a7,7
+ 8000c4a:	28079663          	bnez	a5,8000ed6 <__divdf3+0x48c>
+ 8000c4e:	0038d693          	srli	a3,a7,0x3
+ 8000c52:	00771793          	slli	a5,a4,0x7
+ 8000c56:	0007d863          	bgez	a5,8000c66 <__divdf3+0x21c>
+ 8000c5a:	ff0007b7          	lui	a5,0xff000
+ 8000c5e:	17fd                	addi	a5,a5,-1
+ 8000c60:	8f7d                	and	a4,a4,a5
+ 8000c62:	40048513          	addi	a0,s1,1024
+ 8000c66:	7fe00793          	li	a5,2046
+ 8000c6a:	eaa7c3e3          	blt	a5,a0,8000b10 <__divdf3+0xc6>
+ 8000c6e:	01d71613          	slli	a2,a4,0x1d
+ 8000c72:	00971793          	slli	a5,a4,0x9
+ 8000c76:	83b1                	srli	a5,a5,0xc
+ 8000c78:	00d66733          	or	a4,a2,a3
+ 8000c7c:	7ff57613          	andi	a2,a0,2047
+ 8000c80:	bd61                	j	8000b18 <__divdf3+0xce>
+ 8000c82:	86d6                	mv	a3,s5
+ 8000c84:	8752                	mv	a4,s4
+ 8000c86:	88da                	mv	a7,s6
+ 8000c88:	85de                	mv	a1,s7
+ 8000c8a:	b745                	j	8000c2a <__divdf3+0x1e0>
+ 8000c8c:	23476163          	bltu	a4,s4,8000eae <__divdf3+0x464>
+ 8000c90:	20ea0d63          	beq	s4,a4,8000eaa <__divdf3+0x460>
+ 8000c94:	86da                	mv	a3,s6
+ 8000c96:	14fd                	addi	s1,s1,-1
+ 8000c98:	8452                	mv	s0,s4
+ 8000c9a:	4b01                	li	s6,0
+ 8000c9c:	00871793          	slli	a5,a4,0x8
+ 8000ca0:	0188d313          	srli	t1,a7,0x18
+ 8000ca4:	00f36333          	or	t1,t1,a5
+ 8000ca8:	01035e93          	srli	t4,t1,0x10
+ 8000cac:	03d457b3          	divu	a5,s0,t4
+ 8000cb0:	01031f13          	slli	t5,t1,0x10
+ 8000cb4:	010f5f13          	srli	t5,t5,0x10
+ 8000cb8:	0106d593          	srli	a1,a3,0x10
+ 8000cbc:	00889e13          	slli	t3,a7,0x8
+ 8000cc0:	03d47433          	remu	s0,s0,t4
+ 8000cc4:	02ff0733          	mul	a4,t5,a5
+ 8000cc8:	0442                	slli	s0,s0,0x10
+ 8000cca:	8dc1                	or	a1,a1,s0
+ 8000ccc:	00e5fb63          	bgeu	a1,a4,8000ce2 <__divdf3+0x298>
+ 8000cd0:	959a                	add	a1,a1,t1
+ 8000cd2:	fff78613          	addi	a2,a5,-1 # feffffff <_sp+0xdeff7fff>
+ 8000cd6:	2665ee63          	bltu	a1,t1,8000f52 <__divdf3+0x508>
+ 8000cda:	26e5fc63          	bgeu	a1,a4,8000f52 <__divdf3+0x508>
+ 8000cde:	17f9                	addi	a5,a5,-2
+ 8000ce0:	959a                	add	a1,a1,t1
+ 8000ce2:	8d99                	sub	a1,a1,a4
+ 8000ce4:	03d5d733          	divu	a4,a1,t4
+ 8000ce8:	06c2                	slli	a3,a3,0x10
+ 8000cea:	82c1                	srli	a3,a3,0x10
+ 8000cec:	03d5f5b3          	remu	a1,a1,t4
+ 8000cf0:	02ef0633          	mul	a2,t5,a4
+ 8000cf4:	05c2                	slli	a1,a1,0x10
+ 8000cf6:	8dd5                	or	a1,a1,a3
+ 8000cf8:	00c5fb63          	bgeu	a1,a2,8000d0e <__divdf3+0x2c4>
+ 8000cfc:	959a                	add	a1,a1,t1
+ 8000cfe:	fff70693          	addi	a3,a4,-1 # 40020fff <_sp+0x20018fff>
+ 8000d02:	2465e663          	bltu	a1,t1,8000f4e <__divdf3+0x504>
+ 8000d06:	24c5f463          	bgeu	a1,a2,8000f4e <__divdf3+0x504>
+ 8000d0a:	1779                	addi	a4,a4,-2
+ 8000d0c:	959a                	add	a1,a1,t1
+ 8000d0e:	07c2                	slli	a5,a5,0x10
+ 8000d10:	6441                	lui	s0,0x10
+ 8000d12:	8f5d                	or	a4,a4,a5
+ 8000d14:	fff40793          	addi	a5,s0,-1 # ffff <__stack_size+0xf7ff>
+ 8000d18:	00f77533          	and	a0,a4,a5
+ 8000d1c:	01075893          	srli	a7,a4,0x10
+ 8000d20:	010e5f93          	srli	t6,t3,0x10
+ 8000d24:	00fe77b3          	and	a5,t3,a5
+ 8000d28:	02f502b3          	mul	t0,a0,a5
+ 8000d2c:	40c586b3          	sub	a3,a1,a2
+ 8000d30:	02f883b3          	mul	t2,a7,a5
+ 8000d34:	0102d593          	srli	a1,t0,0x10
+ 8000d38:	02af8633          	mul	a2,t6,a0
+ 8000d3c:	961e                	add	a2,a2,t2
+ 8000d3e:	962e                	add	a2,a2,a1
+ 8000d40:	03f88533          	mul	a0,a7,t6
+ 8000d44:	00767363          	bgeu	a2,t2,8000d4a <__divdf3+0x300>
+ 8000d48:	9522                	add	a0,a0,s0
+ 8000d4a:	68c1                	lui	a7,0x10
+ 8000d4c:	18fd                	addi	a7,a7,-1
+ 8000d4e:	01065593          	srli	a1,a2,0x10
+ 8000d52:	01167633          	and	a2,a2,a7
+ 8000d56:	0642                	slli	a2,a2,0x10
+ 8000d58:	0112f8b3          	and	a7,t0,a7
+ 8000d5c:	95aa                	add	a1,a1,a0
+ 8000d5e:	9646                	add	a2,a2,a7
+ 8000d60:	12b6e663          	bltu	a3,a1,8000e8c <__divdf3+0x442>
+ 8000d64:	12b68263          	beq	a3,a1,8000e88 <__divdf3+0x43e>
+ 8000d68:	40cb0633          	sub	a2,s6,a2
+ 8000d6c:	8e8d                	sub	a3,a3,a1
+ 8000d6e:	00cb3b33          	sltu	s6,s6,a2
+ 8000d72:	41668b33          	sub	s6,a3,s6
+ 8000d76:	3ff48513          	addi	a0,s1,1023
+ 8000d7a:	17630c63          	beq	t1,s6,8000ef2 <__divdf3+0x4a8>
+ 8000d7e:	03db58b3          	divu	a7,s6,t4
+ 8000d82:	01065593          	srli	a1,a2,0x10
+ 8000d86:	03db7b33          	remu	s6,s6,t4
+ 8000d8a:	031f06b3          	mul	a3,t5,a7
+ 8000d8e:	0b42                	slli	s6,s6,0x10
+ 8000d90:	0165eb33          	or	s6,a1,s6
+ 8000d94:	00db7b63          	bgeu	s6,a3,8000daa <__divdf3+0x360>
+ 8000d98:	9b1a                	add	s6,s6,t1
+ 8000d9a:	fff88593          	addi	a1,a7,-1 # ffff <__stack_size+0xf7ff>
+ 8000d9e:	206b6d63          	bltu	s6,t1,8000fb8 <__divdf3+0x56e>
+ 8000da2:	20db7b63          	bgeu	s6,a3,8000fb8 <__divdf3+0x56e>
+ 8000da6:	18f9                	addi	a7,a7,-2
+ 8000da8:	9b1a                	add	s6,s6,t1
+ 8000daa:	40db0b33          	sub	s6,s6,a3
+ 8000dae:	03db56b3          	divu	a3,s6,t4
+ 8000db2:	0642                	slli	a2,a2,0x10
+ 8000db4:	8241                	srli	a2,a2,0x10
+ 8000db6:	03db7b33          	remu	s6,s6,t4
+ 8000dba:	02df0f33          	mul	t5,t5,a3
+ 8000dbe:	0b42                	slli	s6,s6,0x10
+ 8000dc0:	01666633          	or	a2,a2,s6
+ 8000dc4:	01e67b63          	bgeu	a2,t5,8000dda <__divdf3+0x390>
+ 8000dc8:	961a                	add	a2,a2,t1
+ 8000dca:	fff68593          	addi	a1,a3,-1 # ffffff <__stack_size+0xfff7ff>
+ 8000dce:	1e666763          	bltu	a2,t1,8000fbc <__divdf3+0x572>
+ 8000dd2:	1fe67563          	bgeu	a2,t5,8000fbc <__divdf3+0x572>
+ 8000dd6:	16f9                	addi	a3,a3,-2
+ 8000dd8:	961a                	add	a2,a2,t1
+ 8000dda:	08c2                	slli	a7,a7,0x10
+ 8000ddc:	00d8e8b3          	or	a7,a7,a3
+ 8000de0:	01089593          	slli	a1,a7,0x10
+ 8000de4:	0108d293          	srli	t0,a7,0x10
+ 8000de8:	81c1                	srli	a1,a1,0x10
+ 8000dea:	02f58eb3          	mul	t4,a1,a5
+ 8000dee:	41e60633          	sub	a2,a2,t5
+ 8000df2:	02bf85b3          	mul	a1,t6,a1
+ 8000df6:	010ed693          	srli	a3,t4,0x10
+ 8000dfa:	02f287b3          	mul	a5,t0,a5
+ 8000dfe:	95be                	add	a1,a1,a5
+ 8000e00:	96ae                	add	a3,a3,a1
+ 8000e02:	025f8fb3          	mul	t6,t6,t0
+ 8000e06:	00f6f463          	bgeu	a3,a5,8000e0e <__divdf3+0x3c4>
+ 8000e0a:	67c1                	lui	a5,0x10
+ 8000e0c:	9fbe                	add	t6,t6,a5
+ 8000e0e:	65c1                	lui	a1,0x10
+ 8000e10:	15fd                	addi	a1,a1,-1
+ 8000e12:	0106d793          	srli	a5,a3,0x10
+ 8000e16:	8eed                	and	a3,a3,a1
+ 8000e18:	06c2                	slli	a3,a3,0x10
+ 8000e1a:	00befeb3          	and	t4,t4,a1
+ 8000e1e:	9fbe                	add	t6,t6,a5
+ 8000e20:	96f6                	add	a3,a3,t4
+ 8000e22:	09f67f63          	bgeu	a2,t6,8000ec0 <__divdf3+0x476>
+ 8000e26:	961a                	add	a2,a2,t1
+ 8000e28:	fff88793          	addi	a5,a7,-1
+ 8000e2c:	1a666963          	bltu	a2,t1,8000fde <__divdf3+0x594>
+ 8000e30:	19f66863          	bltu	a2,t6,8000fc0 <__divdf3+0x576>
+ 8000e34:	1bf60f63          	beq	a2,t6,8000ff2 <__divdf3+0x5a8>
+ 8000e38:	88be                	mv	a7,a5
+ 8000e3a:	0018e893          	ori	a7,a7,1
+ 8000e3e:	b511                	j	8000c42 <__divdf3+0x1f8>
+ 8000e40:	854a                	mv	a0,s2
+ 8000e42:	111000ef          	jal	ra,8001752 <__clzsi2>
+ 8000e46:	01550713          	addi	a4,a0,21
+ 8000e4a:	45f1                	li	a1,28
+ 8000e4c:	02050493          	addi	s1,a0,32
+ 8000e50:	4622                	lw	a2,8(sp)
+ 8000e52:	46b2                	lw	a3,12(sp)
+ 8000e54:	d4e5dae3          	bge	a1,a4,8000ba8 <__divdf3+0x15e>
+ 8000e58:	ff850413          	addi	s0,a0,-8
+ 8000e5c:	00891a33          	sll	s4,s2,s0
+ 8000e60:	4b01                	li	s6,0
+ 8000e62:	b385                	j	8000bc2 <__divdf3+0x178>
+ 8000e64:	8532                	mv	a0,a2
+ 8000e66:	c432                	sw	a2,8(sp)
+ 8000e68:	0eb000ef          	jal	ra,8001752 <__clzsi2>
+ 8000e6c:	01550713          	addi	a4,a0,21
+ 8000e70:	46f1                	li	a3,28
+ 8000e72:	87aa                	mv	a5,a0
+ 8000e74:	4622                	lw	a2,8(sp)
+ 8000e76:	02050513          	addi	a0,a0,32
+ 8000e7a:	cee6d6e3          	bge	a3,a4,8000b66 <__divdf3+0x11c>
+ 8000e7e:	17e1                	addi	a5,a5,-8
+ 8000e80:	00f61733          	sll	a4,a2,a5
+ 8000e84:	4881                	li	a7,0
+ 8000e86:	b9e5                	j	8000b7e <__divdf3+0x134>
+ 8000e88:	eecb70e3          	bgeu	s6,a2,8000d68 <__divdf3+0x31e>
+ 8000e8c:	9b72                	add	s6,s6,t3
+ 8000e8e:	01cb3533          	sltu	a0,s6,t3
+ 8000e92:	951a                	add	a0,a0,t1
+ 8000e94:	96aa                	add	a3,a3,a0
+ 8000e96:	fff70513          	addi	a0,a4,-1
+ 8000e9a:	02d37863          	bgeu	t1,a3,8000eca <__divdf3+0x480>
+ 8000e9e:	10b6e663          	bltu	a3,a1,8000faa <__divdf3+0x560>
+ 8000ea2:	10d58263          	beq	a1,a3,8000fa6 <__divdf3+0x55c>
+ 8000ea6:	872a                	mv	a4,a0
+ 8000ea8:	b5c1                	j	8000d68 <__divdf3+0x31e>
+ 8000eaa:	df1b65e3          	bltu	s6,a7,8000c94 <__divdf3+0x24a>
+ 8000eae:	001b5593          	srli	a1,s6,0x1
+ 8000eb2:	01fa1693          	slli	a3,s4,0x1f
+ 8000eb6:	001a5413          	srli	s0,s4,0x1
+ 8000eba:	8ecd                	or	a3,a3,a1
+ 8000ebc:	0b7e                	slli	s6,s6,0x1f
+ 8000ebe:	bbf9                	j	8000c9c <__divdf3+0x252>
+ 8000ec0:	f7f61de3          	bne	a2,t6,8000e3a <__divdf3+0x3f0>
+ 8000ec4:	d6068fe3          	beqz	a3,8000c42 <__divdf3+0x1f8>
+ 8000ec8:	bfb9                	j	8000e26 <__divdf3+0x3dc>
+ 8000eca:	fcd31ee3          	bne	t1,a3,8000ea6 <__divdf3+0x45c>
+ 8000ece:	fdcb78e3          	bgeu	s6,t3,8000e9e <__divdf3+0x454>
+ 8000ed2:	872a                	mv	a4,a0
+ 8000ed4:	bd51                	j	8000d68 <__divdf3+0x31e>
+ 8000ed6:	00f8f793          	andi	a5,a7,15
+ 8000eda:	4691                	li	a3,4
+ 8000edc:	d6d789e3          	beq	a5,a3,8000c4e <__divdf3+0x204>
+ 8000ee0:	ffc8b793          	sltiu	a5,a7,-4
+ 8000ee4:	00488693          	addi	a3,a7,4
+ 8000ee8:	0017c793          	xori	a5,a5,1
+ 8000eec:	828d                	srli	a3,a3,0x3
+ 8000eee:	973e                	add	a4,a4,a5
+ 8000ef0:	b38d                	j	8000c52 <__divdf3+0x208>
+ 8000ef2:	4681                	li	a3,0
+ 8000ef4:	4785                	li	a5,1
+ 8000ef6:	fea04ce3          	bgtz	a0,8000eee <__divdf3+0x4a4>
+ 8000efa:	58fd                	li	a7,-1
+ 8000efc:	d0051ce3          	bnez	a0,8000c14 <__divdf3+0x1ca>
+ 8000f00:	c0100493          	li	s1,-1023
+ 8000f04:	4785                	li	a5,1
+ 8000f06:	41e48513          	addi	a0,s1,1054
+ 8000f0a:	00a716b3          	sll	a3,a4,a0
+ 8000f0e:	00f8d633          	srl	a2,a7,a5
+ 8000f12:	00a89533          	sll	a0,a7,a0
+ 8000f16:	8ed1                	or	a3,a3,a2
+ 8000f18:	00a03533          	snez	a0,a0
+ 8000f1c:	8ec9                	or	a3,a3,a0
+ 8000f1e:	0076f613          	andi	a2,a3,7
+ 8000f22:	00f75733          	srl	a4,a4,a5
+ 8000f26:	ce01                	beqz	a2,8000f3e <__divdf3+0x4f4>
+ 8000f28:	00f6f793          	andi	a5,a3,15
+ 8000f2c:	4611                	li	a2,4
+ 8000f2e:	00c78863          	beq	a5,a2,8000f3e <__divdf3+0x4f4>
+ 8000f32:	00468793          	addi	a5,a3,4
+ 8000f36:	00d7b6b3          	sltu	a3,a5,a3
+ 8000f3a:	9736                	add	a4,a4,a3
+ 8000f3c:	86be                	mv	a3,a5
+ 8000f3e:	00871793          	slli	a5,a4,0x8
+ 8000f42:	0407d863          	bgez	a5,8000f92 <__divdf3+0x548>
+ 8000f46:	4605                	li	a2,1
+ 8000f48:	4781                	li	a5,0
+ 8000f4a:	4701                	li	a4,0
+ 8000f4c:	b6f1                	j	8000b18 <__divdf3+0xce>
+ 8000f4e:	8736                	mv	a4,a3
+ 8000f50:	bb7d                	j	8000d0e <__divdf3+0x2c4>
+ 8000f52:	87b2                	mv	a5,a2
+ 8000f54:	b379                	j	8000ce2 <__divdf3+0x298>
+ 8000f56:	46fd                	li	a3,31
+ 8000f58:	faf6d7e3          	bge	a3,a5,8000f06 <__divdf3+0x4bc>
+ 8000f5c:	5605                	li	a2,-31
+ 8000f5e:	8e09                	sub	a2,a2,a0
+ 8000f60:	02000693          	li	a3,32
+ 8000f64:	00c75633          	srl	a2,a4,a2
+ 8000f68:	00d78863          	beq	a5,a3,8000f78 <__divdf3+0x52e>
+ 8000f6c:	43e48793          	addi	a5,s1,1086
+ 8000f70:	00f717b3          	sll	a5,a4,a5
+ 8000f74:	00f8e8b3          	or	a7,a7,a5
+ 8000f78:	011036b3          	snez	a3,a7
+ 8000f7c:	8ed1                	or	a3,a3,a2
+ 8000f7e:	0076f613          	andi	a2,a3,7
+ 8000f82:	4781                	li	a5,0
+ 8000f84:	ce01                	beqz	a2,8000f9c <__divdf3+0x552>
+ 8000f86:	00f6f793          	andi	a5,a3,15
+ 8000f8a:	4611                	li	a2,4
+ 8000f8c:	4701                	li	a4,0
+ 8000f8e:	fac792e3          	bne	a5,a2,8000f32 <__divdf3+0x4e8>
+ 8000f92:	00971793          	slli	a5,a4,0x9
+ 8000f96:	01d71613          	slli	a2,a4,0x1d
+ 8000f9a:	83b1                	srli	a5,a5,0xc
+ 8000f9c:	0036d713          	srli	a4,a3,0x3
+ 8000fa0:	8f51                	or	a4,a4,a2
+ 8000fa2:	4601                	li	a2,0
+ 8000fa4:	be95                	j	8000b18 <__divdf3+0xce>
+ 8000fa6:	f0cb70e3          	bgeu	s6,a2,8000ea6 <__divdf3+0x45c>
+ 8000faa:	9b72                	add	s6,s6,t3
+ 8000fac:	01cb3533          	sltu	a0,s6,t3
+ 8000fb0:	951a                	add	a0,a0,t1
+ 8000fb2:	1779                	addi	a4,a4,-2
+ 8000fb4:	96aa                	add	a3,a3,a0
+ 8000fb6:	bb4d                	j	8000d68 <__divdf3+0x31e>
+ 8000fb8:	88ae                	mv	a7,a1
+ 8000fba:	bbc5                	j	8000daa <__divdf3+0x360>
+ 8000fbc:	86ae                	mv	a3,a1
+ 8000fbe:	bd31                	j	8000dda <__divdf3+0x390>
+ 8000fc0:	001e1793          	slli	a5,t3,0x1
+ 8000fc4:	01c7be33          	sltu	t3,a5,t3
+ 8000fc8:	9372                	add	t1,t1,t3
+ 8000fca:	961a                	add	a2,a2,t1
+ 8000fcc:	18f9                	addi	a7,a7,-2
+ 8000fce:	8e3e                	mv	t3,a5
+ 8000fd0:	e7f615e3          	bne	a2,t6,8000e3a <__divdf3+0x3f0>
+ 8000fd4:	c6de07e3          	beq	t3,a3,8000c42 <__divdf3+0x1f8>
+ 8000fd8:	0018e893          	ori	a7,a7,1
+ 8000fdc:	b19d                	j	8000c42 <__divdf3+0x1f8>
+ 8000fde:	88be                	mv	a7,a5
+ 8000fe0:	fff60ae3          	beq	a2,t6,8000fd4 <__divdf3+0x58a>
+ 8000fe4:	bd99                	j	8000e3a <__divdf3+0x3f0>
+ 8000fe6:	8836                	mv	a6,a3
+ 8000fe8:	7ff00613          	li	a2,2047
+ 8000fec:	4781                	li	a5,0
+ 8000fee:	4701                	li	a4,0
+ 8000ff0:	b625                	j	8000b18 <__divdf3+0xce>
+ 8000ff2:	fcde67e3          	bltu	t3,a3,8000fc0 <__divdf3+0x576>
+ 8000ff6:	88be                	mv	a7,a5
+ 8000ff8:	fede10e3          	bne	t3,a3,8000fd8 <__divdf3+0x58e>
+ 8000ffc:	b199                	j	8000c42 <__divdf3+0x1f8>
+
+08000ffe <__ledf2>:
+__ltdf2():
+ 8000ffe:	0145d713          	srli	a4,a1,0x14
+ 8001002:	001007b7          	lui	a5,0x100
+ 8001006:	17fd                	addi	a5,a5,-1
+ 8001008:	0146d813          	srli	a6,a3,0x14
+ 800100c:	7ff77713          	andi	a4,a4,2047
+ 8001010:	7ff00893          	li	a7,2047
+ 8001014:	00b7fe33          	and	t3,a5,a1
+ 8001018:	8eaa                	mv	t4,a0
+ 800101a:	8ff5                	and	a5,a5,a3
+ 800101c:	81fd                	srli	a1,a1,0x1f
+ 800101e:	8f32                	mv	t5,a2
+ 8001020:	7ff87813          	andi	a6,a6,2047
+ 8001024:	82fd                	srli	a3,a3,0x1f
+ 8001026:	03170e63          	beq	a4,a7,8001062 <__ledf2+0x64>
+ 800102a:	01180d63          	beq	a6,a7,8001044 <__ledf2+0x46>
+ 800102e:	e329                	bnez	a4,8001070 <__ledf2+0x72>
+ 8001030:	00ae68b3          	or	a7,t3,a0
+ 8001034:	00081f63          	bnez	a6,8001052 <__ledf2+0x54>
+ 8001038:	8e5d                	or	a2,a2,a5
+ 800103a:	ee01                	bnez	a2,8001052 <__ledf2+0x54>
+ 800103c:	4301                	li	t1,0
+ 800103e:	04088c63          	beqz	a7,8001096 <__ledf2+0x98>
+ 8001042:	a821                	j	800105a <__ledf2+0x5c>
+ 8001044:	00c7e8b3          	or	a7,a5,a2
+ 8001048:	4309                	li	t1,2
+ 800104a:	04089663          	bnez	a7,8001096 <__ledf2+0x98>
+ 800104e:	d36d                	beqz	a4,8001030 <__ledf2+0x32>
+ 8001050:	a005                	j	8001070 <__ledf2+0x72>
+ 8001052:	04088463          	beqz	a7,800109a <__ledf2+0x9c>
+ 8001056:	02d58563          	beq	a1,a3,8001080 <__ledf2+0x82>
+ 800105a:	4305                	li	t1,1
+ 800105c:	cd8d                	beqz	a1,8001096 <__ledf2+0x98>
+ 800105e:	537d                	li	t1,-1
+ 8001060:	a81d                	j	8001096 <__ledf2+0x98>
+ 8001062:	00ae68b3          	or	a7,t3,a0
+ 8001066:	4309                	li	t1,2
+ 8001068:	02089763          	bnez	a7,8001096 <__ledf2+0x98>
+ 800106c:	02e80a63          	beq	a6,a4,80010a0 <__ledf2+0xa2>
+ 8001070:	00081463          	bnez	a6,8001078 <__ledf2+0x7a>
+ 8001074:	8e5d                	or	a2,a2,a5
+ 8001076:	d275                	beqz	a2,800105a <__ledf2+0x5c>
+ 8001078:	fed591e3          	bne	a1,a3,800105a <__ledf2+0x5c>
+ 800107c:	fce84fe3          	blt	a6,a4,800105a <__ledf2+0x5c>
+ 8001080:	01074963          	blt	a4,a6,8001092 <__ledf2+0x94>
+ 8001084:	fdc7ebe3          	bltu	a5,t3,800105a <__ledf2+0x5c>
+ 8001088:	00fe0f63          	beq	t3,a5,80010a6 <__ledf2+0xa8>
+ 800108c:	4301                	li	t1,0
+ 800108e:	00fe7463          	bgeu	t3,a5,8001096 <__ledf2+0x98>
+ 8001092:	d5f1                	beqz	a1,800105e <__ledf2+0x60>
+ 8001094:	4305                	li	t1,1
+ 8001096:	851a                	mv	a0,t1
+ 8001098:	8082                	ret
+ 800109a:	feed                	bnez	a3,8001094 <__ledf2+0x96>
+ 800109c:	537d                	li	t1,-1
+ 800109e:	bfe5                	j	8001096 <__ledf2+0x98>
+ 80010a0:	8e5d                	or	a2,a2,a5
+ 80010a2:	da79                	beqz	a2,8001078 <__ledf2+0x7a>
+ 80010a4:	bfcd                	j	8001096 <__ledf2+0x98>
+ 80010a6:	fbdf6ae3          	bltu	t5,t4,800105a <__ledf2+0x5c>
+ 80010aa:	4301                	li	t1,0
+ 80010ac:	ffeef5e3          	bgeu	t4,t5,8001096 <__ledf2+0x98>
+ 80010b0:	f1f5                	bnez	a1,8001094 <__ledf2+0x96>
+ 80010b2:	b775                	j	800105e <__ledf2+0x60>
+
+080010b4 <__muldf3>:
+__muldf3():
+ 80010b4:	7139                	addi	sp,sp,-64
+ 80010b6:	d84a                	sw	s2,48(sp)
+ 80010b8:	0145d913          	srli	s2,a1,0x14
+ 80010bc:	d64e                	sw	s3,44(sp)
+ 80010be:	d452                	sw	s4,40(sp)
+ 80010c0:	d256                	sw	s5,36(sp)
+ 80010c2:	00c59993          	slli	s3,a1,0xc
+ 80010c6:	de06                	sw	ra,60(sp)
+ 80010c8:	dc22                	sw	s0,56(sp)
+ 80010ca:	da26                	sw	s1,52(sp)
+ 80010cc:	d05a                	sw	s6,32(sp)
+ 80010ce:	ce5e                	sw	s7,28(sp)
+ 80010d0:	7ff97913          	andi	s2,s2,2047
+ 80010d4:	8a2a                	mv	s4,a0
+ 80010d6:	00c9d993          	srli	s3,s3,0xc
+ 80010da:	01f5da93          	srli	s5,a1,0x1f
+ 80010de:	0e090d63          	beqz	s2,80011d8 <__muldf3+0x124>
+ 80010e2:	7ff00793          	li	a5,2047
+ 80010e6:	18f90463          	beq	s2,a5,800126e <__muldf3+0x1ba>
+ 80010ea:	01d55413          	srli	s0,a0,0x1d
+ 80010ee:	098e                	slli	s3,s3,0x3
+ 80010f0:	013469b3          	or	s3,s0,s3
+ 80010f4:	00800437          	lui	s0,0x800
+ 80010f8:	0089e433          	or	s0,s3,s0
+ 80010fc:	00351493          	slli	s1,a0,0x3
+ 8001100:	c0190913          	addi	s2,s2,-1023
+ 8001104:	4981                	li	s3,0
+ 8001106:	4b81                	li	s7,0
+ 8001108:	0146d713          	srli	a4,a3,0x14
+ 800110c:	00c69a13          	slli	s4,a3,0xc
+ 8001110:	7ff77713          	andi	a4,a4,2047
+ 8001114:	85b2                	mv	a1,a2
+ 8001116:	00ca5a13          	srli	s4,s4,0xc
+ 800111a:	01f6db13          	srli	s6,a3,0x1f
+ 800111e:	10070a63          	beqz	a4,8001232 <__muldf3+0x17e>
+ 8001122:	7ff00793          	li	a5,2047
+ 8001126:	04f70363          	beq	a4,a5,800116c <__muldf3+0xb8>
+ 800112a:	01d65793          	srli	a5,a2,0x1d
+ 800112e:	0a0e                	slli	s4,s4,0x3
+ 8001130:	0147ea33          	or	s4,a5,s4
+ 8001134:	c0170713          	addi	a4,a4,-1023
+ 8001138:	008007b7          	lui	a5,0x800
+ 800113c:	00fa67b3          	or	a5,s4,a5
+ 8001140:	00361593          	slli	a1,a2,0x3
+ 8001144:	993a                	add	s2,s2,a4
+ 8001146:	4881                	li	a7,0
+ 8001148:	016ac733          	xor	a4,s5,s6
+ 800114c:	46bd                	li	a3,15
+ 800114e:	853a                	mv	a0,a4
+ 8001150:	00190813          	addi	a6,s2,1
+ 8001154:	1736e663          	bltu	a3,s3,80012c0 <__muldf3+0x20c>
+ 8001158:	fffff617          	auipc	a2,0xfffff
+ 800115c:	16860613          	addi	a2,a2,360 # 80002c0 <enable_mcycle_minstret+0x92>
+ 8001160:	098a                	slli	s3,s3,0x2
+ 8001162:	99b2                	add	s3,s3,a2
+ 8001164:	0009a683          	lw	a3,0(s3)
+ 8001168:	96b2                	add	a3,a3,a2
+ 800116a:	8682                	jr	a3
+ 800116c:	00ca67b3          	or	a5,s4,a2
+ 8001170:	7ff90913          	addi	s2,s2,2047
+ 8001174:	12079763          	bnez	a5,80012a2 <__muldf3+0x1ee>
+ 8001178:	0029e993          	ori	s3,s3,2
+ 800117c:	4581                	li	a1,0
+ 800117e:	4889                	li	a7,2
+ 8001180:	b7e1                	j	8001148 <__muldf3+0x94>
+ 8001182:	4701                	li	a4,0
+ 8001184:	7ff00793          	li	a5,2047
+ 8001188:	00080437          	lui	s0,0x80
+ 800118c:	4481                	li	s1,0
+ 800118e:	0432                	slli	s0,s0,0xc
+ 8001190:	07d2                	slli	a5,a5,0x14
+ 8001192:	8031                	srli	s0,s0,0xc
+ 8001194:	077e                	slli	a4,a4,0x1f
+ 8001196:	8c5d                	or	s0,s0,a5
+ 8001198:	8c59                	or	s0,s0,a4
+ 800119a:	85a2                	mv	a1,s0
+ 800119c:	50f2                	lw	ra,60(sp)
+ 800119e:	5462                	lw	s0,56(sp)
+ 80011a0:	8526                	mv	a0,s1
+ 80011a2:	5942                	lw	s2,48(sp)
+ 80011a4:	54d2                	lw	s1,52(sp)
+ 80011a6:	59b2                	lw	s3,44(sp)
+ 80011a8:	5a22                	lw	s4,40(sp)
+ 80011aa:	5a92                	lw	s5,36(sp)
+ 80011ac:	5b02                	lw	s6,32(sp)
+ 80011ae:	4bf2                	lw	s7,28(sp)
+ 80011b0:	6121                	addi	sp,sp,64
+ 80011b2:	8082                	ret
+ 80011b4:	855a                	mv	a0,s6
+ 80011b6:	843e                	mv	s0,a5
+ 80011b8:	84ae                	mv	s1,a1
+ 80011ba:	8bc6                	mv	s7,a7
+ 80011bc:	4789                	li	a5,2
+ 80011be:	0efb8b63          	beq	s7,a5,80012b4 <__muldf3+0x200>
+ 80011c2:	478d                	li	a5,3
+ 80011c4:	fafb8fe3          	beq	s7,a5,8001182 <__muldf3+0xce>
+ 80011c8:	4785                	li	a5,1
+ 80011ca:	872a                	mv	a4,a0
+ 80011cc:	38fb9a63          	bne	s7,a5,8001560 <__muldf3+0x4ac>
+ 80011d0:	4781                	li	a5,0
+ 80011d2:	4401                	li	s0,0
+ 80011d4:	4481                	li	s1,0
+ 80011d6:	bf65                	j	800118e <__muldf3+0xda>
+ 80011d8:	00a9e433          	or	s0,s3,a0
+ 80011dc:	cc55                	beqz	s0,8001298 <__muldf3+0x1e4>
+ 80011de:	c636                	sw	a3,12(sp)
+ 80011e0:	c432                	sw	a2,8(sp)
+ 80011e2:	2a098963          	beqz	s3,8001494 <__muldf3+0x3e0>
+ 80011e6:	854e                	mv	a0,s3
+ 80011e8:	23ad                	jal	8001752 <__clzsi2>
+ 80011ea:	4622                	lw	a2,8(sp)
+ 80011ec:	46b2                	lw	a3,12(sp)
+ 80011ee:	87aa                	mv	a5,a0
+ 80011f0:	ff550713          	addi	a4,a0,-11
+ 80011f4:	4475                	li	s0,29
+ 80011f6:	ff878493          	addi	s1,a5,-8 # 7ffff8 <__stack_size+0x7ff7f8>
+ 80011fa:	8c19                	sub	s0,s0,a4
+ 80011fc:	009999b3          	sll	s3,s3,s1
+ 8001200:	008a5433          	srl	s0,s4,s0
+ 8001204:	01346433          	or	s0,s0,s3
+ 8001208:	009a14b3          	sll	s1,s4,s1
+ 800120c:	0146d713          	srli	a4,a3,0x14
+ 8001210:	c0d00913          	li	s2,-1011
+ 8001214:	00c69a13          	slli	s4,a3,0xc
+ 8001218:	7ff77713          	andi	a4,a4,2047
+ 800121c:	40f90933          	sub	s2,s2,a5
+ 8001220:	4981                	li	s3,0
+ 8001222:	4b81                	li	s7,0
+ 8001224:	85b2                	mv	a1,a2
+ 8001226:	00ca5a13          	srli	s4,s4,0xc
+ 800122a:	01f6db13          	srli	s6,a3,0x1f
+ 800122e:	ee071ae3          	bnez	a4,8001122 <__muldf3+0x6e>
+ 8001232:	00ca67b3          	or	a5,s4,a2
+ 8001236:	c7a9                	beqz	a5,8001280 <__muldf3+0x1cc>
+ 8001238:	220a0e63          	beqz	s4,8001474 <__muldf3+0x3c0>
+ 800123c:	8552                	mv	a0,s4
+ 800123e:	c432                	sw	a2,8(sp)
+ 8001240:	2b09                	jal	8001752 <__clzsi2>
+ 8001242:	4622                	lw	a2,8(sp)
+ 8001244:	872a                	mv	a4,a0
+ 8001246:	ff550693          	addi	a3,a0,-11
+ 800124a:	47f5                	li	a5,29
+ 800124c:	ff870593          	addi	a1,a4,-8
+ 8001250:	8f95                	sub	a5,a5,a3
+ 8001252:	00ba1a33          	sll	s4,s4,a1
+ 8001256:	00f657b3          	srl	a5,a2,a5
+ 800125a:	0147e7b3          	or	a5,a5,s4
+ 800125e:	00b615b3          	sll	a1,a2,a1
+ 8001262:	40e90933          	sub	s2,s2,a4
+ 8001266:	c0d90913          	addi	s2,s2,-1011
+ 800126a:	4881                	li	a7,0
+ 800126c:	bdf1                	j	8001148 <__muldf3+0x94>
+ 800126e:	00a9e433          	or	s0,s3,a0
+ 8001272:	ec01                	bnez	s0,800128a <__muldf3+0x1d6>
+ 8001274:	49a1                	li	s3,8
+ 8001276:	4481                	li	s1,0
+ 8001278:	7ff00913          	li	s2,2047
+ 800127c:	4b89                	li	s7,2
+ 800127e:	b569                	j	8001108 <__muldf3+0x54>
+ 8001280:	0019e993          	ori	s3,s3,1
+ 8001284:	4581                	li	a1,0
+ 8001286:	4885                	li	a7,1
+ 8001288:	b5c1                	j	8001148 <__muldf3+0x94>
+ 800128a:	844e                	mv	s0,s3
+ 800128c:	84aa                	mv	s1,a0
+ 800128e:	49b1                	li	s3,12
+ 8001290:	7ff00913          	li	s2,2047
+ 8001294:	4b8d                	li	s7,3
+ 8001296:	bd8d                	j	8001108 <__muldf3+0x54>
+ 8001298:	4991                	li	s3,4
+ 800129a:	4481                	li	s1,0
+ 800129c:	4901                	li	s2,0
+ 800129e:	4b85                	li	s7,1
+ 80012a0:	b5a5                	j	8001108 <__muldf3+0x54>
+ 80012a2:	0039e993          	ori	s3,s3,3
+ 80012a6:	87d2                	mv	a5,s4
+ 80012a8:	488d                	li	a7,3
+ 80012aa:	bd79                	j	8001148 <__muldf3+0x94>
+ 80012ac:	4789                	li	a5,2
+ 80012ae:	8556                	mv	a0,s5
+ 80012b0:	f0fb99e3          	bne	s7,a5,80011c2 <__muldf3+0x10e>
+ 80012b4:	872a                	mv	a4,a0
+ 80012b6:	7ff00793          	li	a5,2047
+ 80012ba:	4401                	li	s0,0
+ 80012bc:	4481                	li	s1,0
+ 80012be:	bdc1                	j	800118e <__muldf3+0xda>
+ 80012c0:	6ec1                	lui	t4,0x10
+ 80012c2:	fffe8613          	addi	a2,t4,-1 # ffff <__stack_size+0xf7ff>
+ 80012c6:	0104d693          	srli	a3,s1,0x10
+ 80012ca:	0105de13          	srli	t3,a1,0x10
+ 80012ce:	8cf1                	and	s1,s1,a2
+ 80012d0:	8df1                	and	a1,a1,a2
+ 80012d2:	02958633          	mul	a2,a1,s1
+ 80012d6:	02b68333          	mul	t1,a3,a1
+ 80012da:	01065893          	srli	a7,a2,0x10
+ 80012de:	029e0533          	mul	a0,t3,s1
+ 80012e2:	951a                	add	a0,a0,t1
+ 80012e4:	98aa                	add	a7,a7,a0
+ 80012e6:	03c682b3          	mul	t0,a3,t3
+ 80012ea:	0068f363          	bgeu	a7,t1,80012f0 <__muldf3+0x23c>
+ 80012ee:	92f6                	add	t0,t0,t4
+ 80012f0:	6fc1                	lui	t6,0x10
+ 80012f2:	ffff8313          	addi	t1,t6,-1 # ffff <__stack_size+0xf7ff>
+ 80012f6:	0067f533          	and	a0,a5,t1
+ 80012fa:	0107d393          	srli	t2,a5,0x10
+ 80012fe:	0068f7b3          	and	a5,a7,t1
+ 8001302:	07c2                	slli	a5,a5,0x10
+ 8001304:	00667333          	and	t1,a2,t1
+ 8001308:	933e                	add	t1,t1,a5
+ 800130a:	02950633          	mul	a2,a0,s1
+ 800130e:	0108d893          	srli	a7,a7,0x10
+ 8001312:	02a687b3          	mul	a5,a3,a0
+ 8001316:	01065f13          	srli	t5,a2,0x10
+ 800131a:	029384b3          	mul	s1,t2,s1
+ 800131e:	94be                	add	s1,s1,a5
+ 8001320:	94fa                	add	s1,s1,t5
+ 8001322:	02768eb3          	mul	t4,a3,t2
+ 8001326:	00f4f363          	bgeu	s1,a5,800132c <__muldf3+0x278>
+ 800132a:	9efe                	add	t4,t4,t6
+ 800132c:	6a41                	lui	s4,0x10
+ 800132e:	fffa0793          	addi	a5,s4,-1 # ffff <__stack_size+0xf7ff>
+ 8001332:	01045f93          	srli	t6,s0,0x10
+ 8001336:	00f476b3          	and	a3,s0,a5
+ 800133a:	00f4f9b3          	and	s3,s1,a5
+ 800133e:	8e7d                	and	a2,a2,a5
+ 8001340:	80c1                	srli	s1,s1,0x10
+ 8001342:	02d58433          	mul	s0,a1,a3
+ 8001346:	09c2                	slli	s3,s3,0x10
+ 8001348:	01d48f33          	add	t5,s1,t4
+ 800134c:	99b2                	add	s3,s3,a2
+ 800134e:	98ce                	add	a7,a7,s3
+ 8001350:	02de07b3          	mul	a5,t3,a3
+ 8001354:	01045e93          	srli	t4,s0,0x10
+ 8001358:	02bf85b3          	mul	a1,t6,a1
+ 800135c:	97ae                	add	a5,a5,a1
+ 800135e:	9ebe                	add	t4,t4,a5
+ 8001360:	03fe0e33          	mul	t3,t3,t6
+ 8001364:	00bef363          	bgeu	t4,a1,800136a <__muldf3+0x2b6>
+ 8001368:	9e52                	add	t3,t3,s4
+ 800136a:	67c1                	lui	a5,0x10
+ 800136c:	fff78593          	addi	a1,a5,-1 # ffff <__stack_size+0xf7ff>
+ 8001370:	00bef633          	and	a2,t4,a1
+ 8001374:	8c6d                	and	s0,s0,a1
+ 8001376:	0642                	slli	a2,a2,0x10
+ 8001378:	9622                	add	a2,a2,s0
+ 800137a:	010ede93          	srli	t4,t4,0x10
+ 800137e:	02d505b3          	mul	a1,a0,a3
+ 8001382:	9e76                	add	t3,t3,t4
+ 8001384:	02af8533          	mul	a0,t6,a0
+ 8001388:	0105d413          	srli	s0,a1,0x10
+ 800138c:	02d386b3          	mul	a3,t2,a3
+ 8001390:	96aa                	add	a3,a3,a0
+ 8001392:	96a2                	add	a3,a3,s0
+ 8001394:	03f38fb3          	mul	t6,t2,t6
+ 8001398:	00a6f363          	bgeu	a3,a0,800139e <__muldf3+0x2ea>
+ 800139c:	9fbe                	add	t6,t6,a5
+ 800139e:	6541                	lui	a0,0x10
+ 80013a0:	157d                	addi	a0,a0,-1
+ 80013a2:	00a6f7b3          	and	a5,a3,a0
+ 80013a6:	07c2                	slli	a5,a5,0x10
+ 80013a8:	8d6d                	and	a0,a0,a1
+ 80013aa:	97aa                	add	a5,a5,a0
+ 80013ac:	005885b3          	add	a1,a7,t0
+ 80013b0:	0135b9b3          	sltu	s3,a1,s3
+ 80013b4:	97fa                	add	a5,a5,t5
+ 80013b6:	95b2                	add	a1,a1,a2
+ 80013b8:	01378433          	add	s0,a5,s3
+ 80013bc:	00c5b633          	sltu	a2,a1,a2
+ 80013c0:	01c40eb3          	add	t4,s0,t3
+ 80013c4:	00ce8533          	add	a0,t4,a2
+ 80013c8:	01343433          	sltu	s0,s0,s3
+ 80013cc:	01e7b7b3          	sltu	a5,a5,t5
+ 80013d0:	8fc1                	or	a5,a5,s0
+ 80013d2:	01cebe33          	sltu	t3,t4,t3
+ 80013d6:	0106d413          	srli	s0,a3,0x10
+ 80013da:	00c53633          	sltu	a2,a0,a2
+ 80013de:	943e                	add	s0,s0,a5
+ 80013e0:	00ce6633          	or	a2,t3,a2
+ 80013e4:	00959493          	slli	s1,a1,0x9
+ 80013e8:	9432                	add	s0,s0,a2
+ 80013ea:	947e                	add	s0,s0,t6
+ 80013ec:	0064e4b3          	or	s1,s1,t1
+ 80013f0:	0426                	slli	s0,s0,0x9
+ 80013f2:	01755693          	srli	a3,a0,0x17
+ 80013f6:	009034b3          	snez	s1,s1
+ 80013fa:	81dd                	srli	a1,a1,0x17
+ 80013fc:	00951793          	slli	a5,a0,0x9
+ 8001400:	8ccd                	or	s1,s1,a1
+ 8001402:	8c55                	or	s0,s0,a3
+ 8001404:	8cdd                	or	s1,s1,a5
+ 8001406:	00741793          	slli	a5,s0,0x7
+ 800140a:	0007db63          	bgez	a5,8001420 <__muldf3+0x36c>
+ 800140e:	0014d793          	srli	a5,s1,0x1
+ 8001412:	8885                	andi	s1,s1,1
+ 8001414:	01f41693          	slli	a3,s0,0x1f
+ 8001418:	8cdd                	or	s1,s1,a5
+ 800141a:	8cd5                	or	s1,s1,a3
+ 800141c:	8005                	srli	s0,s0,0x1
+ 800141e:	8942                	mv	s2,a6
+ 8001420:	3ff90793          	addi	a5,s2,1023
+ 8001424:	08f05763          	blez	a5,80014b2 <__muldf3+0x3fe>
+ 8001428:	0074f693          	andi	a3,s1,7
+ 800142c:	ce81                	beqz	a3,8001444 <__muldf3+0x390>
+ 800142e:	00f4f693          	andi	a3,s1,15
+ 8001432:	4611                	li	a2,4
+ 8001434:	00c68863          	beq	a3,a2,8001444 <__muldf3+0x390>
+ 8001438:	00448693          	addi	a3,s1,4
+ 800143c:	0096b4b3          	sltu	s1,a3,s1
+ 8001440:	9426                	add	s0,s0,s1
+ 8001442:	84b6                	mv	s1,a3
+ 8001444:	00741693          	slli	a3,s0,0x7
+ 8001448:	0006d863          	bgez	a3,8001458 <__muldf3+0x3a4>
+ 800144c:	ff0007b7          	lui	a5,0xff000
+ 8001450:	17fd                	addi	a5,a5,-1
+ 8001452:	8c7d                	and	s0,s0,a5
+ 8001454:	40090793          	addi	a5,s2,1024
+ 8001458:	7fe00693          	li	a3,2046
+ 800145c:	0ef6cd63          	blt	a3,a5,8001556 <__muldf3+0x4a2>
+ 8001460:	0034d693          	srli	a3,s1,0x3
+ 8001464:	01d41493          	slli	s1,s0,0x1d
+ 8001468:	0426                	slli	s0,s0,0x9
+ 800146a:	8cd5                	or	s1,s1,a3
+ 800146c:	8031                	srli	s0,s0,0xc
+ 800146e:	7ff7f793          	andi	a5,a5,2047
+ 8001472:	bb31                	j	800118e <__muldf3+0xda>
+ 8001474:	8532                	mv	a0,a2
+ 8001476:	c432                	sw	a2,8(sp)
+ 8001478:	2ce9                	jal	8001752 <__clzsi2>
+ 800147a:	01550693          	addi	a3,a0,21 # 10015 <__stack_size+0xf815>
+ 800147e:	47f1                	li	a5,28
+ 8001480:	02050713          	addi	a4,a0,32
+ 8001484:	4622                	lw	a2,8(sp)
+ 8001486:	dcd7d2e3          	bge	a5,a3,800124a <__muldf3+0x196>
+ 800148a:	1561                	addi	a0,a0,-8
+ 800148c:	00a617b3          	sll	a5,a2,a0
+ 8001490:	4581                	li	a1,0
+ 8001492:	bbc1                	j	8001262 <__muldf3+0x1ae>
+ 8001494:	2c7d                	jal	8001752 <__clzsi2>
+ 8001496:	01550713          	addi	a4,a0,21
+ 800149a:	45f1                	li	a1,28
+ 800149c:	02050793          	addi	a5,a0,32
+ 80014a0:	4622                	lw	a2,8(sp)
+ 80014a2:	46b2                	lw	a3,12(sp)
+ 80014a4:	d4e5d8e3          	bge	a1,a4,80011f4 <__muldf3+0x140>
+ 80014a8:	1561                	addi	a0,a0,-8
+ 80014aa:	00aa1433          	sll	s0,s4,a0
+ 80014ae:	4481                	li	s1,0
+ 80014b0:	bbb1                	j	800120c <__muldf3+0x158>
+ 80014b2:	4685                	li	a3,1
+ 80014b4:	8e9d                	sub	a3,a3,a5
+ 80014b6:	e7b1                	bnez	a5,8001502 <__muldf3+0x44e>
+ 80014b8:	41e90913          	addi	s2,s2,1054
+ 80014bc:	012497b3          	sll	a5,s1,s2
+ 80014c0:	00d4d4b3          	srl	s1,s1,a3
+ 80014c4:	01241933          	sll	s2,s0,s2
+ 80014c8:	00f037b3          	snez	a5,a5
+ 80014cc:	009964b3          	or	s1,s2,s1
+ 80014d0:	8cdd                	or	s1,s1,a5
+ 80014d2:	0074f793          	andi	a5,s1,7
+ 80014d6:	00d456b3          	srl	a3,s0,a3
+ 80014da:	cf81                	beqz	a5,80014f2 <__muldf3+0x43e>
+ 80014dc:	00f4f793          	andi	a5,s1,15
+ 80014e0:	4611                	li	a2,4
+ 80014e2:	00c78863          	beq	a5,a2,80014f2 <__muldf3+0x43e>
+ 80014e6:	00448793          	addi	a5,s1,4
+ 80014ea:	0097b4b3          	sltu	s1,a5,s1
+ 80014ee:	96a6                	add	a3,a3,s1
+ 80014f0:	84be                	mv	s1,a5
+ 80014f2:	00869793          	slli	a5,a3,0x8
+ 80014f6:	0407d863          	bgez	a5,8001546 <__muldf3+0x492>
+ 80014fa:	4785                	li	a5,1
+ 80014fc:	4401                	li	s0,0
+ 80014fe:	4481                	li	s1,0
+ 8001500:	b179                	j	800118e <__muldf3+0xda>
+ 8001502:	03800613          	li	a2,56
+ 8001506:	ccd645e3          	blt	a2,a3,80011d0 <__muldf3+0x11c>
+ 800150a:	467d                	li	a2,31
+ 800150c:	fad656e3          	bge	a2,a3,80014b8 <__muldf3+0x404>
+ 8001510:	5605                	li	a2,-31
+ 8001512:	40f607b3          	sub	a5,a2,a5
+ 8001516:	02000593          	li	a1,32
+ 800151a:	00f45633          	srl	a2,s0,a5
+ 800151e:	00b68763          	beq	a3,a1,800152c <__muldf3+0x478>
+ 8001522:	43e90913          	addi	s2,s2,1086
+ 8001526:	012417b3          	sll	a5,s0,s2
+ 800152a:	8cdd                	or	s1,s1,a5
+ 800152c:	009034b3          	snez	s1,s1
+ 8001530:	8cd1                	or	s1,s1,a2
+ 8001532:	0074f693          	andi	a3,s1,7
+ 8001536:	4401                	li	s0,0
+ 8001538:	ca99                	beqz	a3,800154e <__muldf3+0x49a>
+ 800153a:	00f4f793          	andi	a5,s1,15
+ 800153e:	4611                	li	a2,4
+ 8001540:	4681                	li	a3,0
+ 8001542:	fac792e3          	bne	a5,a2,80014e6 <__muldf3+0x432>
+ 8001546:	00969413          	slli	s0,a3,0x9
+ 800154a:	8031                	srli	s0,s0,0xc
+ 800154c:	06f6                	slli	a3,a3,0x1d
+ 800154e:	808d                	srli	s1,s1,0x3
+ 8001550:	8cd5                	or	s1,s1,a3
+ 8001552:	4781                	li	a5,0
+ 8001554:	b92d                	j	800118e <__muldf3+0xda>
+ 8001556:	7ff00793          	li	a5,2047
+ 800155a:	4401                	li	s0,0
+ 800155c:	4481                	li	s1,0
+ 800155e:	b905                	j	800118e <__muldf3+0xda>
+ 8001560:	8942                	mv	s2,a6
+ 8001562:	bd7d                	j	8001420 <__muldf3+0x36c>
+
+08001564 <__floatunsidf>:
+__floatunsidf():
+ 8001564:	cd15                	beqz	a0,80015a0 <__floatunsidf+0x3c>
+ 8001566:	1141                	addi	sp,sp,-16
+ 8001568:	c422                	sw	s0,8(sp)
+ 800156a:	c606                	sw	ra,12(sp)
+ 800156c:	842a                	mv	s0,a0
+ 800156e:	22d5                	jal	8001752 <__clzsi2>
+ 8001570:	41e00693          	li	a3,1054
+ 8001574:	8e89                	sub	a3,a3,a0
+ 8001576:	47a9                	li	a5,10
+ 8001578:	7ff6f693          	andi	a3,a3,2047
+ 800157c:	02a7dc63          	bge	a5,a0,80015b4 <__floatunsidf+0x50>
+ 8001580:	1555                	addi	a0,a0,-11
+ 8001582:	00a417b3          	sll	a5,s0,a0
+ 8001586:	07b2                	slli	a5,a5,0xc
+ 8001588:	83b1                	srli	a5,a5,0xc
+ 800158a:	4701                	li	a4,0
+ 800158c:	40b2                	lw	ra,12(sp)
+ 800158e:	4422                	lw	s0,8(sp)
+ 8001590:	07b2                	slli	a5,a5,0xc
+ 8001592:	06d2                	slli	a3,a3,0x14
+ 8001594:	83b1                	srli	a5,a5,0xc
+ 8001596:	8fd5                	or	a5,a5,a3
+ 8001598:	853a                	mv	a0,a4
+ 800159a:	85be                	mv	a1,a5
+ 800159c:	0141                	addi	sp,sp,16
+ 800159e:	8082                	ret
+ 80015a0:	4781                	li	a5,0
+ 80015a2:	4681                	li	a3,0
+ 80015a4:	07b2                	slli	a5,a5,0xc
+ 80015a6:	06d2                	slli	a3,a3,0x14
+ 80015a8:	83b1                	srli	a5,a5,0xc
+ 80015aa:	4701                	li	a4,0
+ 80015ac:	8fd5                	or	a5,a5,a3
+ 80015ae:	853a                	mv	a0,a4
+ 80015b0:	85be                	mv	a1,a5
+ 80015b2:	8082                	ret
+ 80015b4:	472d                	li	a4,11
+ 80015b6:	8f09                	sub	a4,a4,a0
+ 80015b8:	00e457b3          	srl	a5,s0,a4
+ 80015bc:	07b2                	slli	a5,a5,0xc
+ 80015be:	01550713          	addi	a4,a0,21
+ 80015c2:	00e41733          	sll	a4,s0,a4
+ 80015c6:	83b1                	srli	a5,a5,0xc
+ 80015c8:	b7d1                	j	800158c <__floatunsidf+0x28>
+
+080015ca <__floatundidf>:
+__floatundidf():
+ 80015ca:	00b567b3          	or	a5,a0,a1
+ 80015ce:	cf9d                	beqz	a5,800160c <__floatundidf+0x42>
+ 80015d0:	1141                	addi	sp,sp,-16
+ 80015d2:	c422                	sw	s0,8(sp)
+ 80015d4:	c226                	sw	s1,4(sp)
+ 80015d6:	c04a                	sw	s2,0(sp)
+ 80015d8:	c606                	sw	ra,12(sp)
+ 80015da:	84aa                	mv	s1,a0
+ 80015dc:	892e                	mv	s2,a1
+ 80015de:	842e                	mv	s0,a1
+ 80015e0:	c1a1                	beqz	a1,8001620 <__floatundidf+0x56>
+ 80015e2:	852e                	mv	a0,a1
+ 80015e4:	22bd                	jal	8001752 <__clzsi2>
+ 80015e6:	43e00693          	li	a3,1086
+ 80015ea:	8e89                	sub	a3,a3,a0
+ 80015ec:	43300793          	li	a5,1075
+ 80015f0:	06d7c463          	blt	a5,a3,8001658 <__floatundidf+0x8e>
+ 80015f4:	00c91793          	slli	a5,s2,0xc
+ 80015f8:	462d                	li	a2,11
+ 80015fa:	8726                	mv	a4,s1
+ 80015fc:	7ff6f693          	andi	a3,a3,2047
+ 8001600:	83b1                	srli	a5,a5,0xc
+ 8001602:	0ca65c63          	bge	a2,a0,80016da <__floatundidf+0x110>
+ 8001606:	ff550613          	addi	a2,a0,-11
+ 800160a:	a80d                	j	800163c <__floatundidf+0x72>
+ 800160c:	4781                	li	a5,0
+ 800160e:	4681                	li	a3,0
+ 8001610:	07b2                	slli	a5,a5,0xc
+ 8001612:	06d2                	slli	a3,a3,0x14
+ 8001614:	83b1                	srli	a5,a5,0xc
+ 8001616:	4701                	li	a4,0
+ 8001618:	8fd5                	or	a5,a5,a3
+ 800161a:	853a                	mv	a0,a4
+ 800161c:	85be                	mv	a1,a5
+ 800161e:	8082                	ret
+ 8001620:	2a0d                	jal	8001752 <__clzsi2>
+ 8001622:	862a                	mv	a2,a0
+ 8001624:	43e00693          	li	a3,1086
+ 8001628:	02050513          	addi	a0,a0,32
+ 800162c:	8e89                	sub	a3,a3,a0
+ 800162e:	02a00713          	li	a4,42
+ 8001632:	7ff6f693          	andi	a3,a3,2047
+ 8001636:	0ca74c63          	blt	a4,a0,800170e <__floatundidf+0x144>
+ 800163a:	0655                	addi	a2,a2,21
+ 800163c:	02b00713          	li	a4,43
+ 8001640:	8f09                	sub	a4,a4,a0
+ 8001642:	00c917b3          	sll	a5,s2,a2
+ 8001646:	00e4d733          	srl	a4,s1,a4
+ 800164a:	8f5d                	or	a4,a4,a5
+ 800164c:	00c71793          	slli	a5,a4,0xc
+ 8001650:	83b1                	srli	a5,a5,0xc
+ 8001652:	00c49733          	sll	a4,s1,a2
+ 8001656:	a051                	j	80016da <__floatundidf+0x110>
+ 8001658:	43600793          	li	a5,1078
+ 800165c:	02d7d963          	bge	a5,a3,800168e <__floatundidf+0xc4>
+ 8001660:	01850713          	addi	a4,a0,24
+ 8001664:	03850793          	addi	a5,a0,56
+ 8001668:	0c074763          	bltz	a4,8001736 <__floatundidf+0x16c>
+ 800166c:	00e49633          	sll	a2,s1,a4
+ 8001670:	4701                	li	a4,0
+ 8001672:	4421                	li	s0,8
+ 8001674:	8c09                	sub	s0,s0,a0
+ 8001676:	8f51                	or	a4,a4,a2
+ 8001678:	fe040793          	addi	a5,s0,-32 # 7ffe0 <__stack_size+0x7f7e0>
+ 800167c:	00e03733          	snez	a4,a4
+ 8001680:	0807cf63          	bltz	a5,800171e <__floatundidf+0x154>
+ 8001684:	00f954b3          	srl	s1,s2,a5
+ 8001688:	4781                	li	a5,0
+ 800168a:	8cd9                	or	s1,s1,a4
+ 800168c:	843e                	mv	s0,a5
+ 800168e:	47a1                	li	a5,8
+ 8001690:	06a7c163          	blt	a5,a0,80016f2 <__floatundidf+0x128>
+ 8001694:	ff800737          	lui	a4,0xff800
+ 8001698:	177d                	addi	a4,a4,-1
+ 800169a:	0074f613          	andi	a2,s1,7
+ 800169e:	00e477b3          	and	a5,s0,a4
+ 80016a2:	c605                	beqz	a2,80016ca <__floatundidf+0x100>
+ 80016a4:	00f4f613          	andi	a2,s1,15
+ 80016a8:	4591                	li	a1,4
+ 80016aa:	02b60063          	beq	a2,a1,80016ca <__floatundidf+0x100>
+ 80016ae:	00448613          	addi	a2,s1,4
+ 80016b2:	009634b3          	sltu	s1,a2,s1
+ 80016b6:	97a6                	add	a5,a5,s1
+ 80016b8:	00879593          	slli	a1,a5,0x8
+ 80016bc:	0805d963          	bgez	a1,800174e <__floatundidf+0x184>
+ 80016c0:	43f00693          	li	a3,1087
+ 80016c4:	8ff9                	and	a5,a5,a4
+ 80016c6:	8e89                	sub	a3,a3,a0
+ 80016c8:	84b2                	mv	s1,a2
+ 80016ca:	01d79713          	slli	a4,a5,0x1d
+ 80016ce:	808d                	srli	s1,s1,0x3
+ 80016d0:	07a6                	slli	a5,a5,0x9
+ 80016d2:	8f45                	or	a4,a4,s1
+ 80016d4:	83b1                	srli	a5,a5,0xc
+ 80016d6:	7ff6f693          	andi	a3,a3,2047
+ 80016da:	40b2                	lw	ra,12(sp)
+ 80016dc:	4422                	lw	s0,8(sp)
+ 80016de:	07b2                	slli	a5,a5,0xc
+ 80016e0:	06d2                	slli	a3,a3,0x14
+ 80016e2:	83b1                	srli	a5,a5,0xc
+ 80016e4:	8fd5                	or	a5,a5,a3
+ 80016e6:	4492                	lw	s1,4(sp)
+ 80016e8:	4902                	lw	s2,0(sp)
+ 80016ea:	853a                	mv	a0,a4
+ 80016ec:	85be                	mv	a1,a5
+ 80016ee:	0141                	addi	sp,sp,16
+ 80016f0:	8082                	ret
+ 80016f2:	02800713          	li	a4,40
+ 80016f6:	ff850613          	addi	a2,a0,-8
+ 80016fa:	8f09                	sub	a4,a4,a0
+ 80016fc:	00e4d733          	srl	a4,s1,a4
+ 8001700:	00c417b3          	sll	a5,s0,a2
+ 8001704:	00f76433          	or	s0,a4,a5
+ 8001708:	00c494b3          	sll	s1,s1,a2
+ 800170c:	b761                	j	8001694 <__floatundidf+0xca>
+ 800170e:	ff560793          	addi	a5,a2,-11
+ 8001712:	00f497b3          	sll	a5,s1,a5
+ 8001716:	07b2                	slli	a5,a5,0xc
+ 8001718:	83b1                	srli	a5,a5,0xc
+ 800171a:	4701                	li	a4,0
+ 800171c:	bf7d                	j	80016da <__floatundidf+0x110>
+ 800171e:	467d                	li	a2,31
+ 8001720:	00191793          	slli	a5,s2,0x1
+ 8001724:	8e01                	sub	a2,a2,s0
+ 8001726:	00c797b3          	sll	a5,a5,a2
+ 800172a:	0084d4b3          	srl	s1,s1,s0
+ 800172e:	8cdd                	or	s1,s1,a5
+ 8001730:	008957b3          	srl	a5,s2,s0
+ 8001734:	bf99                	j	800168a <__floatundidf+0xc0>
+ 8001736:	467d                	li	a2,31
+ 8001738:	8e1d                	sub	a2,a2,a5
+ 800173a:	0014d713          	srli	a4,s1,0x1
+ 800173e:	00c75733          	srl	a4,a4,a2
+ 8001742:	00f91633          	sll	a2,s2,a5
+ 8001746:	8e59                	or	a2,a2,a4
+ 8001748:	00f49733          	sll	a4,s1,a5
+ 800174c:	b71d                	j	8001672 <__floatundidf+0xa8>
+ 800174e:	84b2                	mv	s1,a2
+ 8001750:	bfad                	j	80016ca <__floatundidf+0x100>
+
+08001752 <__clzsi2>:
+__clzsi2():
+ 8001752:	67c1                	lui	a5,0x10
+ 8001754:	02f57e63          	bgeu	a0,a5,8001790 <__clzsi2+0x3e>
+ 8001758:	0ff00793          	li	a5,255
+ 800175c:	02000713          	li	a4,32
+ 8001760:	00a7ec63          	bltu	a5,a0,8001778 <__clzsi2+0x26>
+ 8001764:	fffff797          	auipc	a5,0xfffff
+ 8001768:	b9c78793          	addi	a5,a5,-1124 # 8000300 <__clz_tab>
+ 800176c:	97aa                	add	a5,a5,a0
+ 800176e:	0007c503          	lbu	a0,0(a5)
+ 8001772:	40a70533          	sub	a0,a4,a0
+ 8001776:	8082                	ret
+ 8001778:	8121                	srli	a0,a0,0x8
+ 800177a:	fffff797          	auipc	a5,0xfffff
+ 800177e:	b8678793          	addi	a5,a5,-1146 # 8000300 <__clz_tab>
+ 8001782:	97aa                	add	a5,a5,a0
+ 8001784:	0007c503          	lbu	a0,0(a5)
+ 8001788:	4761                	li	a4,24
+ 800178a:	40a70533          	sub	a0,a4,a0
+ 800178e:	8082                	ret
+ 8001790:	010007b7          	lui	a5,0x1000
+ 8001794:	00f56e63          	bltu	a0,a5,80017b0 <__clzsi2+0x5e>
+ 8001798:	8161                	srli	a0,a0,0x18
+ 800179a:	fffff797          	auipc	a5,0xfffff
+ 800179e:	b6678793          	addi	a5,a5,-1178 # 8000300 <__clz_tab>
+ 80017a2:	97aa                	add	a5,a5,a0
+ 80017a4:	0007c503          	lbu	a0,0(a5)
+ 80017a8:	4721                	li	a4,8
+ 80017aa:	40a70533          	sub	a0,a4,a0
+ 80017ae:	8082                	ret
+ 80017b0:	8141                	srli	a0,a0,0x10
+ 80017b2:	fffff797          	auipc	a5,0xfffff
+ 80017b6:	b4e78793          	addi	a5,a5,-1202 # 8000300 <__clz_tab>
+ 80017ba:	97aa                	add	a5,a5,a0
+ 80017bc:	0007c503          	lbu	a0,0(a5)
+ 80017c0:	4741                	li	a4,16
+ 80017c2:	40a70533          	sub	a0,a4,a0
+ 80017c6:	8082                	ret
+
+080017c8 <atexit>:
+atexit():
+ 80017c8:	85aa                	mv	a1,a0
+ 80017ca:	4681                	li	a3,0
+ 80017cc:	4601                	li	a2,0
+ 80017ce:	4501                	li	a0,0
+ 80017d0:	a2f1                	j	800199c <__register_exitproc>
+
+080017d2 <exit>:
+exit():
+ 80017d2:	1141                	addi	sp,sp,-16
+ 80017d4:	c422                	sw	s0,8(sp)
+ 80017d6:	c606                	sw	ra,12(sp)
+ 80017d8:	00000797          	auipc	a5,0x0
+ 80017dc:	24c78793          	addi	a5,a5,588 # 8001a24 <__call_exitprocs>
+ 80017e0:	842a                	mv	s0,a0
+ 80017e2:	c399                	beqz	a5,80017e8 <exit+0x16>
+ 80017e4:	4581                	li	a1,0
+ 80017e6:	2c3d                	jal	8001a24 <__call_exitprocs>
+ 80017e8:	00000797          	auipc	a5,0x0
+ 80017ec:	30478793          	addi	a5,a5,772 # 8001aec <_global_impure_ptr>
+ 80017f0:	4388                	lw	a0,0(a5)
+ 80017f2:	551c                	lw	a5,40(a0)
+ 80017f4:	c391                	beqz	a5,80017f8 <exit+0x26>
+ 80017f6:	9782                	jalr	a5
+ 80017f8:	8522                	mv	a0,s0
+ 80017fa:	c67fe0ef          	jal	ra,8000460 <_exit>
+
+080017fe <__libc_fini_array>:
+__libc_fini_array():
+ 80017fe:	1141                	addi	sp,sp,-16
+ 8001800:	00000797          	auipc	a5,0x0
+ 8001804:	2f078793          	addi	a5,a5,752 # 8001af0 <__fini_array_end>
+ 8001808:	c422                	sw	s0,8(sp)
+ 800180a:	00000417          	auipc	s0,0x0
+ 800180e:	2e640413          	addi	s0,s0,742 # 8001af0 <__fini_array_end>
+ 8001812:	8c1d                	sub	s0,s0,a5
+ 8001814:	c226                	sw	s1,4(sp)
+ 8001816:	c606                	sw	ra,12(sp)
+ 8001818:	8409                	srai	s0,s0,0x2
+ 800181a:	84be                	mv	s1,a5
+ 800181c:	e419                	bnez	s0,800182a <__libc_fini_array+0x2c>
+ 800181e:	4422                	lw	s0,8(sp)
+ 8001820:	40b2                	lw	ra,12(sp)
+ 8001822:	4492                	lw	s1,4(sp)
+ 8001824:	0141                	addi	sp,sp,16
+ 8001826:	e9bfe06f          	j	80006c0 <_fini>
+ 800182a:	147d                	addi	s0,s0,-1
+ 800182c:	00241793          	slli	a5,s0,0x2
+ 8001830:	97a6                	add	a5,a5,s1
+ 8001832:	439c                	lw	a5,0(a5)
+ 8001834:	9782                	jalr	a5
+ 8001836:	b7dd                	j	800181c <__libc_fini_array+0x1e>
+
+08001838 <__libc_init_array>:
+__libc_init_array():
+ 8001838:	1141                	addi	sp,sp,-16
+ 800183a:	00000797          	auipc	a5,0x0
+ 800183e:	2b678793          	addi	a5,a5,694 # 8001af0 <__fini_array_end>
+ 8001842:	c422                	sw	s0,8(sp)
+ 8001844:	00000417          	auipc	s0,0x0
+ 8001848:	2ac40413          	addi	s0,s0,684 # 8001af0 <__fini_array_end>
+ 800184c:	8c1d                	sub	s0,s0,a5
+ 800184e:	c226                	sw	s1,4(sp)
+ 8001850:	c04a                	sw	s2,0(sp)
+ 8001852:	c606                	sw	ra,12(sp)
+ 8001854:	8409                	srai	s0,s0,0x2
+ 8001856:	4481                	li	s1,0
+ 8001858:	893e                	mv	s2,a5
+ 800185a:	02849863          	bne	s1,s0,800188a <__libc_init_array+0x52>
+ 800185e:	e4ffe0ef          	jal	ra,80006ac <_init>
+ 8001862:	00000797          	auipc	a5,0x0
+ 8001866:	28e78793          	addi	a5,a5,654 # 8001af0 <__fini_array_end>
+ 800186a:	00000417          	auipc	s0,0x0
+ 800186e:	28640413          	addi	s0,s0,646 # 8001af0 <__fini_array_end>
+ 8001872:	8c1d                	sub	s0,s0,a5
+ 8001874:	8409                	srai	s0,s0,0x2
+ 8001876:	4481                	li	s1,0
+ 8001878:	893e                	mv	s2,a5
+ 800187a:	00849f63          	bne	s1,s0,8001898 <__libc_init_array+0x60>
+ 800187e:	40b2                	lw	ra,12(sp)
+ 8001880:	4422                	lw	s0,8(sp)
+ 8001882:	4492                	lw	s1,4(sp)
+ 8001884:	4902                	lw	s2,0(sp)
+ 8001886:	0141                	addi	sp,sp,16
+ 8001888:	8082                	ret
+ 800188a:	00249793          	slli	a5,s1,0x2
+ 800188e:	97ca                	add	a5,a5,s2
+ 8001890:	439c                	lw	a5,0(a5)
+ 8001892:	0485                	addi	s1,s1,1
+ 8001894:	9782                	jalr	a5
+ 8001896:	b7d1                	j	800185a <__libc_init_array+0x22>
+ 8001898:	00249793          	slli	a5,s1,0x2
+ 800189c:	97ca                	add	a5,a5,s2
+ 800189e:	439c                	lw	a5,0(a5)
+ 80018a0:	0485                	addi	s1,s1,1
+ 80018a2:	9782                	jalr	a5
+ 80018a4:	bfd9                	j	800187a <__libc_init_array+0x42>
+
+080018a6 <memcpy>:
+memcpy():
+ 80018a6:	00a5c7b3          	xor	a5,a1,a0
+ 80018aa:	8b8d                	andi	a5,a5,3
+ 80018ac:	00c50733          	add	a4,a0,a2
+ 80018b0:	e781                	bnez	a5,80018b8 <memcpy+0x12>
+ 80018b2:	478d                	li	a5,3
+ 80018b4:	00c7ee63          	bltu	a5,a2,80018d0 <memcpy+0x2a>
+ 80018b8:	87aa                	mv	a5,a0
+ 80018ba:	0ae57063          	bgeu	a0,a4,800195a <memcpy+0xb4>
+ 80018be:	0005c683          	lbu	a3,0(a1) # 10000 <__stack_size+0xf800>
+ 80018c2:	0785                	addi	a5,a5,1
+ 80018c4:	0585                	addi	a1,a1,1
+ 80018c6:	fed78fa3          	sb	a3,-1(a5)
+ 80018ca:	fee7eae3          	bltu	a5,a4,80018be <memcpy+0x18>
+ 80018ce:	8082                	ret
+ 80018d0:	00357693          	andi	a3,a0,3
+ 80018d4:	87aa                	mv	a5,a0
+ 80018d6:	ca91                	beqz	a3,80018ea <memcpy+0x44>
+ 80018d8:	0005c683          	lbu	a3,0(a1)
+ 80018dc:	0785                	addi	a5,a5,1
+ 80018de:	0585                	addi	a1,a1,1
+ 80018e0:	fed78fa3          	sb	a3,-1(a5)
+ 80018e4:	0037f693          	andi	a3,a5,3
+ 80018e8:	b7fd                	j	80018d6 <memcpy+0x30>
+ 80018ea:	ffc77693          	andi	a3,a4,-4
+ 80018ee:	fe068613          	addi	a2,a3,-32
+ 80018f2:	06c7f063          	bgeu	a5,a2,8001952 <memcpy+0xac>
+ 80018f6:	0005a383          	lw	t2,0(a1)
+ 80018fa:	0045a283          	lw	t0,4(a1)
+ 80018fe:	0085af83          	lw	t6,8(a1)
+ 8001902:	00c5af03          	lw	t5,12(a1)
+ 8001906:	0105ae83          	lw	t4,16(a1)
+ 800190a:	0145ae03          	lw	t3,20(a1)
+ 800190e:	0185a303          	lw	t1,24(a1)
+ 8001912:	01c5a883          	lw	a7,28(a1)
+ 8001916:	02458593          	addi	a1,a1,36
+ 800191a:	0077a023          	sw	t2,0(a5)
+ 800191e:	ffc5a803          	lw	a6,-4(a1)
+ 8001922:	0057a223          	sw	t0,4(a5)
+ 8001926:	01f7a423          	sw	t6,8(a5)
+ 800192a:	01e7a623          	sw	t5,12(a5)
+ 800192e:	01d7a823          	sw	t4,16(a5)
+ 8001932:	01c7aa23          	sw	t3,20(a5)
+ 8001936:	0067ac23          	sw	t1,24(a5)
+ 800193a:	0117ae23          	sw	a7,28(a5)
+ 800193e:	02478793          	addi	a5,a5,36
+ 8001942:	ff07ae23          	sw	a6,-4(a5)
+ 8001946:	b775                	j	80018f2 <memcpy+0x4c>
+ 8001948:	4190                	lw	a2,0(a1)
+ 800194a:	0791                	addi	a5,a5,4
+ 800194c:	0591                	addi	a1,a1,4
+ 800194e:	fec7ae23          	sw	a2,-4(a5)
+ 8001952:	fed7ebe3          	bltu	a5,a3,8001948 <memcpy+0xa2>
+ 8001956:	f6e7e4e3          	bltu	a5,a4,80018be <memcpy+0x18>
+ 800195a:	8082                	ret
+
+0800195c <write>:
+write():
+ 800195c:	17ffe797          	auipc	a5,0x17ffe
+ 8001960:	70878793          	addi	a5,a5,1800 # 20000064 <_impure_ptr>
+ 8001964:	86b2                	mv	a3,a2
+ 8001966:	862e                	mv	a2,a1
+ 8001968:	85aa                	mv	a1,a0
+ 800196a:	4388                	lw	a0,0(a5)
+ 800196c:	a009                	j	800196e <_write_r>
+
+0800196e <_write_r>:
+_write_r():
+ 800196e:	1141                	addi	sp,sp,-16
+ 8001970:	c422                	sw	s0,8(sp)
+ 8001972:	842a                	mv	s0,a0
+ 8001974:	852e                	mv	a0,a1
+ 8001976:	85b2                	mv	a1,a2
+ 8001978:	8636                	mv	a2,a3
+ 800197a:	8801ac23          	sw	zero,-1896(gp) # 200000f8 <errno>
+ 800197e:	c606                	sw	ra,12(sp)
+ 8001980:	b4bfe0ef          	jal	ra,80004ca <_write>
+ 8001984:	57fd                	li	a5,-1
+ 8001986:	00f51763          	bne	a0,a5,8001994 <_write_r+0x26>
+ 800198a:	89818793          	addi	a5,gp,-1896 # 200000f8 <errno>
+ 800198e:	439c                	lw	a5,0(a5)
+ 8001990:	c391                	beqz	a5,8001994 <_write_r+0x26>
+ 8001992:	c01c                	sw	a5,0(s0)
+ 8001994:	40b2                	lw	ra,12(sp)
+ 8001996:	4422                	lw	s0,8(sp)
+ 8001998:	0141                	addi	sp,sp,16
+ 800199a:	8082                	ret
+
+0800199c <__register_exitproc>:
+__register_exitproc():
+ 800199c:	17ffe797          	auipc	a5,0x17ffe
+ 80019a0:	6cc78793          	addi	a5,a5,1740 # 20000068 <_global_atexit>
+ 80019a4:	439c                	lw	a5,0(a5)
+ 80019a6:	8e2a                	mv	t3,a0
+ 80019a8:	e39d                	bnez	a5,80019ce <__register_exitproc+0x32>
+ 80019aa:	17ffe717          	auipc	a4,0x17ffe
+ 80019ae:	6c270713          	addi	a4,a4,1730 # 2000006c <_global_atexit0>
+ 80019b2:	17ffe797          	auipc	a5,0x17ffe
+ 80019b6:	6ae7ab23          	sw	a4,1718(a5) # 20000068 <_global_atexit>
+ 80019ba:	f7ffe517          	auipc	a0,0xf7ffe
+ 80019be:	64650513          	addi	a0,a0,1606 # 0 <__stack_size-0x800>
+ 80019c2:	87ba                	mv	a5,a4
+ 80019c4:	c509                	beqz	a0,80019ce <__register_exitproc+0x32>
+ 80019c6:	411c                	lw	a5,0(a0)
+ 80019c8:	88f1aa23          	sw	a5,-1900(gp) # 200000f4 <_global_atexit0+0x88>
+ 80019cc:	87ba                	mv	a5,a4
+ 80019ce:	43d8                	lw	a4,4(a5)
+ 80019d0:	487d                	li	a6,31
+ 80019d2:	557d                	li	a0,-1
+ 80019d4:	04e84763          	blt	a6,a4,8001a22 <__register_exitproc+0x86>
+ 80019d8:	020e0e63          	beqz	t3,8001a14 <__register_exitproc+0x78>
+ 80019dc:	0887a803          	lw	a6,136(a5)
+ 80019e0:	04080163          	beqz	a6,8001a22 <__register_exitproc+0x86>
+ 80019e4:	00271893          	slli	a7,a4,0x2
+ 80019e8:	98c2                	add	a7,a7,a6
+ 80019ea:	00c8a023          	sw	a2,0(a7)
+ 80019ee:	10082303          	lw	t1,256(a6)
+ 80019f2:	4605                	li	a2,1
+ 80019f4:	00e61633          	sll	a2,a2,a4
+ 80019f8:	00c36333          	or	t1,t1,a2
+ 80019fc:	10682023          	sw	t1,256(a6)
+ 8001a00:	08d8a023          	sw	a3,128(a7)
+ 8001a04:	4689                	li	a3,2
+ 8001a06:	00de1763          	bne	t3,a3,8001a14 <__register_exitproc+0x78>
+ 8001a0a:	10482683          	lw	a3,260(a6)
+ 8001a0e:	8e55                	or	a2,a2,a3
+ 8001a10:	10c82223          	sw	a2,260(a6)
+ 8001a14:	00170693          	addi	a3,a4,1
+ 8001a18:	070a                	slli	a4,a4,0x2
+ 8001a1a:	c3d4                	sw	a3,4(a5)
+ 8001a1c:	97ba                	add	a5,a5,a4
+ 8001a1e:	c78c                	sw	a1,8(a5)
+ 8001a20:	4501                	li	a0,0
+ 8001a22:	8082                	ret
+
+08001a24 <__call_exitprocs>:
+__call_exitprocs():
+ 8001a24:	7179                	addi	sp,sp,-48
+ 8001a26:	cc52                	sw	s4,24(sp)
+ 8001a28:	ca56                	sw	s5,20(sp)
+ 8001a2a:	c85a                	sw	s6,16(sp)
+ 8001a2c:	c65e                	sw	s7,12(sp)
+ 8001a2e:	d606                	sw	ra,44(sp)
+ 8001a30:	d422                	sw	s0,40(sp)
+ 8001a32:	d226                	sw	s1,36(sp)
+ 8001a34:	d04a                	sw	s2,32(sp)
+ 8001a36:	ce4e                	sw	s3,28(sp)
+ 8001a38:	c462                	sw	s8,8(sp)
+ 8001a3a:	8b2a                	mv	s6,a0
+ 8001a3c:	8a2e                	mv	s4,a1
+ 8001a3e:	17ffea97          	auipc	s5,0x17ffe
+ 8001a42:	62aa8a93          	addi	s5,s5,1578 # 20000068 <_global_atexit>
+ 8001a46:	4b85                	li	s7,1
+ 8001a48:	000aa403          	lw	s0,0(s5)
+ 8001a4c:	c811                	beqz	s0,8001a60 <__call_exitprocs+0x3c>
+ 8001a4e:	4044                	lw	s1,4(s0)
+ 8001a50:	08842983          	lw	s3,136(s0)
+ 8001a54:	fff48913          	addi	s2,s1,-1
+ 8001a58:	048a                	slli	s1,s1,0x2
+ 8001a5a:	94a2                	add	s1,s1,s0
+ 8001a5c:	00095e63          	bgez	s2,8001a78 <__call_exitprocs+0x54>
+ 8001a60:	50b2                	lw	ra,44(sp)
+ 8001a62:	5422                	lw	s0,40(sp)
+ 8001a64:	5492                	lw	s1,36(sp)
+ 8001a66:	5902                	lw	s2,32(sp)
+ 8001a68:	49f2                	lw	s3,28(sp)
+ 8001a6a:	4a62                	lw	s4,24(sp)
+ 8001a6c:	4ad2                	lw	s5,20(sp)
+ 8001a6e:	4b42                	lw	s6,16(sp)
+ 8001a70:	4bb2                	lw	s7,12(sp)
+ 8001a72:	4c22                	lw	s8,8(sp)
+ 8001a74:	6145                	addi	sp,sp,48
+ 8001a76:	8082                	ret
+ 8001a78:	000a0e63          	beqz	s4,8001a94 <__call_exitprocs+0x70>
+ 8001a7c:	00099563          	bnez	s3,8001a86 <__call_exitprocs+0x62>
+ 8001a80:	197d                	addi	s2,s2,-1
+ 8001a82:	14f1                	addi	s1,s1,-4
+ 8001a84:	bfe1                	j	8001a5c <__call_exitprocs+0x38>
+ 8001a86:	00291793          	slli	a5,s2,0x2
+ 8001a8a:	97ce                	add	a5,a5,s3
+ 8001a8c:	0807a783          	lw	a5,128(a5)
+ 8001a90:	ff4798e3          	bne	a5,s4,8001a80 <__call_exitprocs+0x5c>
+ 8001a94:	4058                	lw	a4,4(s0)
+ 8001a96:	40dc                	lw	a5,4(s1)
+ 8001a98:	177d                	addi	a4,a4,-1
+ 8001a9a:	03271863          	bne	a4,s2,8001aca <__call_exitprocs+0xa6>
+ 8001a9e:	01242223          	sw	s2,4(s0)
+ 8001aa2:	dff9                	beqz	a5,8001a80 <__call_exitprocs+0x5c>
+ 8001aa4:	00442c03          	lw	s8,4(s0)
+ 8001aa8:	00098863          	beqz	s3,8001ab8 <__call_exitprocs+0x94>
+ 8001aac:	1009a683          	lw	a3,256(s3)
+ 8001ab0:	012b9733          	sll	a4,s7,s2
+ 8001ab4:	8ef9                	and	a3,a3,a4
+ 8001ab6:	ee89                	bnez	a3,8001ad0 <__call_exitprocs+0xac>
+ 8001ab8:	9782                	jalr	a5
+ 8001aba:	4058                	lw	a4,4(s0)
+ 8001abc:	000aa783          	lw	a5,0(s5)
+ 8001ac0:	f98714e3          	bne	a4,s8,8001a48 <__call_exitprocs+0x24>
+ 8001ac4:	faf40ee3          	beq	s0,a5,8001a80 <__call_exitprocs+0x5c>
+ 8001ac8:	b741                	j	8001a48 <__call_exitprocs+0x24>
+ 8001aca:	0004a223          	sw	zero,4(s1)
+ 8001ace:	bfd1                	j	8001aa2 <__call_exitprocs+0x7e>
+ 8001ad0:	00291693          	slli	a3,s2,0x2
+ 8001ad4:	96ce                	add	a3,a3,s3
+ 8001ad6:	428c                	lw	a1,0(a3)
+ 8001ad8:	1049a683          	lw	a3,260(s3)
+ 8001adc:	8f75                	and	a4,a4,a3
+ 8001ade:	e701                	bnez	a4,8001ae6 <__call_exitprocs+0xc2>
+ 8001ae0:	855a                	mv	a0,s6
+ 8001ae2:	9782                	jalr	a5
+ 8001ae4:	bfd9                	j	8001aba <__call_exitprocs+0x96>
+ 8001ae6:	852e                	mv	a0,a1
+ 8001ae8:	9782                	jalr	a5
+ 8001aea:	bfc1                	j	8001aba <__call_exitprocs+0x96>
